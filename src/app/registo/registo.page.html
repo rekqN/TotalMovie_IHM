@@ -1,0 +1,99 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Criar conta</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/inicio">
+        <ion-icon slot="icon-only" name="document-text-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Criar conta</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <form [formGroup]="IHMForm" (ngSubmit)="submitForm()" novalidate>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Nome completo</ion-label>
+      <ion-input type="text" formControlName="nome" required></ion-input>
+    </ion-item>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['required']">
+      Nome é de preenchimento obrigatório
+    </ion-text>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['minlength']">
+      Nome deverá ter pelo menos 2 caracteres
+    </ion-text>
+
+
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" formControlName="email" required></ion-input>
+    </ion-item>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['email'].errors?.['required']">
+      Email é de preenchimento obrigatório
+    </ion-text>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['email'].errors?.['pattern']">
+      Email inválido
+    </ion-text> 
+
+    <ion-item lines="full">
+      <ion-label position="floating">Nome de usuário</ion-label>
+      <ion-input type="text" formControlName="nome" required></ion-input>
+    </ion-item>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['required']">
+      Nome é de preenchimento obrigatório
+    </ion-text>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['minlength']">
+      Nome deverá ter pelo menos 2 caracteres
+    </ion-text>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Criar palavra-passe</ion-label>
+      <ion-input type="text" formControlName="nome" required></ion-input>
+    </ion-item>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['required']">
+      Nome é de preenchimento obrigatório
+    </ion-text>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['minlength']">
+      Nome deverá ter pelo menos 2 caracteres
+    </ion-text>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Confirmar palavra-passe</ion-label>
+      <ion-input type="text" formControlName="nome" required></ion-input>
+    </ion-item>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['required']">
+      Nome é de preenchimento obrigatório
+    </ion-text>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['minlength']">
+      Nome deverá ter pelo menos 2 caracteres
+    </ion-text>
+
+    <!-- Radio buttons -->
+    <ion-radio-group formControlName="curso" lines="full">
+
+
+      <ion-item>
+        <ion-label class="ion-text-wrap">Eu aceito os Termos e Condições de uso</ion-label>
+        <ion-radio slot="start" value="ecgm"></ion-radio>
+      </ion-item>
+
+    </ion-radio-group>
+    <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && formControls['curso'].errors?.['required']">
+      Precisa de aceitar os termos e condições de uso
+    </ion-text>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block">Registar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>
+
