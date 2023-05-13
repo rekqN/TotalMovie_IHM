@@ -11,13 +11,12 @@ export class InicioPage implements OnInit {
 
   IHMForm: FormGroup;
   isSubmitted: boolean;
+  nomeInputPreenchido = false;
 
   constructor() { 
     this.IHMForm = new FormGroup({
       nome:  new FormControl('', [Validators.required, Validators.minLength(2)]),
-      email: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
-      // email: new FormControl('', [Validators.required, Validators.email]),
-      curso: new FormControl('', [Validators.required])
+
     });
     this.isSubmitted = false;
   }

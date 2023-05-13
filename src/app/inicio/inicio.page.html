@@ -3,11 +3,6 @@
     <ion-title>
       Iniciar sessão
     </ion-title>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/registo">
-        <ion-icon slot="icon-only" name="document-text-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -20,8 +15,10 @@
 
   <form [formGroup]="IHMForm" (ngSubmit)="submitForm()" novalidate>
     <ion-item lines="full">
+      <ion-button type="submit" color="light" expand="block">
       <ion-label position="floating">Nome</ion-label>
       <ion-input type="text" formControlName="nome" required></ion-input>
+    </ion-button>
     </ion-item>
     <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['required']">
       Nome é de preenchimento obrigatório
@@ -31,16 +28,17 @@
     </ion-text>
 
       <ion-item lines="full">
+        <ion-button type="submit" color="light" expand="block">
         <ion-label position="floating">Palavra-passe</ion-label>
-        <ion-input type="text" formControlName="nome" required></ion-input>
+        <ion-input type="pass" formControlName="nome" required></ion-input>
+        </ion-button>
       </ion-item>
       <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['required']">
-        Nome é de preenchimento obrigatório
+        Palavra-passe é de preenchimento obrigatório
       </ion-text>
       <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['minlength']">
-        Nome deverá ter pelo menos 2 caracteres
+        Palavra-passe deverá ter pelo menos 2 caracteres
       </ion-text>
-
 
 
     <ion-row>
@@ -48,6 +46,12 @@
         <ion-button type="submit" color="danger" expand="block">Entrar</ion-button>
       </ion-col>
     </ion-row>
+
+    <ion-buttons slot="end">
+      <ion-button routerLink="/registo">
+        <ion-icon slot="icon-only" name="document-text-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </form>
 
 </ion-content>
