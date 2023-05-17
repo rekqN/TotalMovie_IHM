@@ -1,0 +1,62 @@
+.small-image {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-top: 45px;
+    position: relative;
+    right: 80px;
+
+    
+  }
+
+  .total-movies {
+    font-size: 16px; 
+    position: relative;
+    top: -15px;
+    left: 5px;
+    color: #91C6FC;
+    white-space: nowrap;
+  }
+
+  .toolbar {
+    height: 90px;
+  }
+
+  .search-icon{
+    margin-top: -30px;
+    position: relative;
+    left: 84px;
+    color: #91C6FC;
+  }
+
+  .other-icons{
+    margin-top: -30px;
+    position: relative;
+    left: 170px;
+    color: #91C6FC;
+    margin-right: 5px;
+
+  }
+
+  .genre{
+    font-size: 16px;
+    color: white;
+    position: relative;
+    left: 20px;
+  }
+
+  .image-container {
+    display: flex;
+  }
+  
+  .capa{
+    width: 90px;
+    height: 120px;
+    margin-right: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+  }
