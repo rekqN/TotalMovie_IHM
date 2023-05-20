@@ -12,13 +12,11 @@
       <ion-title size="large">Iniciar sessão</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  <br>
   <form [formGroup]="IHMForm" (ngSubmit)="submitForm()" novalidate>
     <ion-item lines="full">
-      <ion-button type="submit" color="light" expand="block">
       <ion-label position="floating">Nome</ion-label>
       <ion-input type="text" formControlName="nome" required></ion-input>
-    </ion-button>
     </ion-item>
     <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['required']">
       Nome é de preenchimento obrigatório
@@ -28,10 +26,8 @@
     </ion-text>
 
       <ion-item lines="full">
-        <ion-button type="submit" color="light" expand="block">
         <ion-label position="floating">Palavra-passe</ion-label>
         <ion-input type="password" formControlName="nome" required></ion-input>
-        </ion-button>
       </ion-item>
       <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['required']">
         Palavra-passe é de preenchimento obrigatório
