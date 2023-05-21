@@ -43,7 +43,7 @@
 
     <ion-item lines="full">
       <ion-label position="floating">Nome de usuário</ion-label>
-      <ion-input type="text" formControlName="nome" required></ion-input>
+      <ion-input type="text" formControlName="username" required></ion-input>
     </ion-item>
     <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['required']">
       Nome é de preenchimento obrigatório
@@ -54,7 +54,7 @@
 
     <ion-item lines="full">
       <ion-label position="floating">Criar palavra-passe</ion-label>
-      <ion-input type="password" formControlName="nome" required></ion-input>
+      <ion-input type="password" formControlName="password" required></ion-input>
     </ion-item>
     <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['required']">
       Nome é de preenchimento obrigatório
@@ -65,7 +65,7 @@
 
     <ion-item lines="full">
       <ion-label position="floating">Confirmar palavra-passe</ion-label>
-      <ion-input type="password" formControlName="nome" required></ion-input>
+      <ion-input type="password" formControlName="confirmpassword" required></ion-input>
     </ion-item>
     <ion-text class="ion-padding" color="danger" *ngIf="isSubmitted && IHMForm.controls['nome'].errors?.['required']">
       Nome é de preenchimento obrigatório
