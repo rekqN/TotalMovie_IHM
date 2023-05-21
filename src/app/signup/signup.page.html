@@ -9,26 +9,28 @@
     <h1 class="signup">Criar conta</h1>
   </div>
   <br><br>
+  <form>
   <ion-list>
     <ion-item>
       <ion-label position="stacked">Nome completo</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" name="fullname" [(ngModel)]="userdata.fullname"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="stacked">E-mail</ion-label>
-      <ion-input type="E-mail"></ion-input>
+      <ion-input type="E-mail" name="email" [(ngModel)]="userdata.email"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="stacked">Nome de usuário</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label position="stacked" >Nome de usuário</ion-label>
+      <ion-input type="text" name="username" [(ngModel)]="userdata.username"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="stacked">Palavra-passe</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" name="password" [(ngModel)]="userdata.password"></ion-input>
     </ion-item>
     <ion-item lines="none">
       Já tens conta? <a routerLink="/login"> Inicia sessão</a>
     </ion-item>
   </ion-list>
-<ion-button type="button" expand="block" shape="rounded" color="primary">Registar</ion-button>
+<ion-button type="button" expand="block" shape="rounded" color="primary" (click)="Register()">Registar</ion-button>
+</form>
 </ion-content>

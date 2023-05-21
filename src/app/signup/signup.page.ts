@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.page.html',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupPage implements OnInit {
 
+  userdata={
+    fullname:'',
+    email:'', 
+    username:'',
+    password:''
+  }
   constructor() { }
 
   ngOnInit() {
   }
 
+  Register(){
+    console.log(this.userdata);
+  }
 }
