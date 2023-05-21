@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Storage } from '@ionic/storage-angular';
 
 
 @Component({
@@ -14,12 +15,34 @@ export class SignupPage implements OnInit {
     username:'',
     password:''
   }
-  constructor() { }
+  constructor(private storage: Storage) { }
 
   ngOnInit() {
   }
 
-  Register(){
-    console.log(this.userdata);
+  Register() {
+    this.storage.create().then((storage) => {
+      storage.get('userdata')
+        .then((existingData) => {
+          if (existingData) {
+            if (Array.isArray(existingData)) {
+              existingData.push(this.userdata);
+              return storage.set('userdata', existingData);
+            } else {
+              // Se `existingData` não for um array, crie um novo array com os dados existentes e adicione o novo dado
+              return storage.set('userdata', [existingData, this.userdata]);
+            }
+          } else {
+            return storage.set('userdata', [this.userdata]);
+          }
+        })
+        .then(() => {
+          console.log('Dados salvos com sucesso!');
+          console.log(this.userdata);
+        })
+        .catch((error) => {
+          console.error('Erro ao salvar os dados:', error);
+        });
+    });
   }
 }

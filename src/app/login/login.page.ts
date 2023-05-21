@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Storage } from '@ionic/storage-angular';
 
 @Component({
   selector: 'app-login',
@@ -11,8 +12,23 @@ export class LoginPage implements OnInit {
     username:'',
     password:''
   }
-  constructor() { }
+  constructor(private storage: Storage) { }
 
+  ionViewDidEnter() {
+    this.storage.get('userdata')
+      .then((userdata) => {
+        if (userdata) {
+          console.log('Dados recuperados:', userdata);
+          // Faça o que for necessário com os dados recuperados
+        } else {
+          console.log('Nenhum dado encontrado');
+        }
+      })
+      .catch((error) => {
+        console.error('Erro ao recuperar os dados:', error);
+      });
+  }
+  
   ngOnInit() {
   }
 
