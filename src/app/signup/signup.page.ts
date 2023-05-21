@@ -26,10 +26,22 @@ export class SignupPage implements OnInit {
         .then((existingData) => {
           if (existingData) {
             if (Array.isArray(existingData)) {
-              existingData.push(this.userdata);
-              return storage.set('userdata', existingData);
+              // Verifique se o usuário já existe no array existente
+              const userExists = existingData.some((user) => user.username === this.userdata.username);
+              if (!userExists) {
+                // Adicione o novo usuário ao array existente
+                existingData.push(this.userdata);
+                return storage.set('userdata', existingData);
+              } else {
+                console.log('Esse usuário já existe!');
+                return;
+              }
             } else {
               // Se `existingData` não for um array, crie um novo array com os dados existentes e adicione o novo dado
+              if (existingData.username === this.userdata.username) {
+                console.log('Esse usuário já existe!');
+                return;
+              }
               return storage.set('userdata', [existingData, this.userdata]);
             }
           } else {
