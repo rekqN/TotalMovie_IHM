@@ -8,12 +8,7 @@ import { Storage } from '@ionic/storage-angular';
 })
 export class LoginPage implements OnInit {
 
-  userdata = {
-    fullname: '',
-    email: '',
-    username: '',
-    password: ''
-  };
+  userdata: any[] = [];
 
   inputlogin = {
     username: '',
@@ -43,11 +38,13 @@ export class LoginPage implements OnInit {
   }
 
   Login() {
+    console.log('Dados guardados:', this.userdata);
+    console.log('Dados introduzidos:', this.inputlogin);
     if (this.validateInput()) {
       if (this.checkCredentials()) {
         console.log('Sucesso');
       } else {
-        console.log('Esse usuário não existe!');
+        console.log('As credenciais introduzidas estão incorretas!');
       }
     } else {
       console.log('Nome de usuário ou palavra-passe inválidos!');
@@ -55,7 +52,6 @@ export class LoginPage implements OnInit {
   }
 
   validateInput() {
-    console.log(this.inputlogin);
     return (
       this.inputlogin.username !== '' && this.inputlogin.password !== ''
     );
@@ -63,9 +59,6 @@ export class LoginPage implements OnInit {
 
   checkCredentials() {
     // Verificar se existe um par de nome de usuário e senha em comum
-    return (
-      this.userdata.username === this.inputlogin.username &&
-      this.userdata.password === this.inputlogin.password
-    );
+    return this.userdata.some((user) => user.username === this.inputlogin.username && user.password === this.inputlogin.password);
   }
 }
