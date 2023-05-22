@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage-angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,7 @@ export class LoginPage implements OnInit {
     password: ''
   };
   
-  constructor(private storage: Storage) { }
+  constructor(private storage: Storage, private router: Router) { }
 
   async ionViewWillEnter() {
     await this.storage.create(); // Cria o banco de dados
@@ -43,6 +44,7 @@ export class LoginPage implements OnInit {
     if (this.validateInput()) {
       if (this.checkCredentials()) {
         console.log('Sucesso');
+        this.router.navigateByUrl('/tabs/tab1');
       } else {
         console.log('As credenciais introduzidas estão incorretas!');
       }
