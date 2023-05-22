@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage-angular';
 
 
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.page.html',
@@ -21,6 +22,33 @@ export class SignupPage implements OnInit {
   }
 
   Register() {
+    // Verificar se algum campo está vazio
+    if (
+      this.userdata.fullname === '' ||
+      this.userdata.email === '' ||
+      this.userdata.username === '' ||
+      this.userdata.password === ''
+    ) {
+      console.log('Por favor, preencha todos os campos');
+      return;
+    }
+  
+    // Verificar se algum campo não tem pelo menos dois caracteres
+    if (
+      this.userdata.fullname.length < 2 ||
+      this.userdata.email.length < 2 ||
+      this.userdata.username.length < 2 ||
+      this.userdata.password.length < 2
+    ) {
+      console.log('Todos os campos devem ter pelo menos dois caracteres');
+      return;
+    }
+  
+    if (!this.userdata.email.includes('@') || !this.userdata.email.includes('.')) {
+      console.log('O campo de e-mail deve conter "@" e "."');
+      return;
+    }
+  
     this.storage.create().then((storage) => {
       storage.get('userdata')
         .then((existingData) => {
@@ -58,3 +86,5 @@ export class SignupPage implements OnInit {
     });
   }
 }
+
+
