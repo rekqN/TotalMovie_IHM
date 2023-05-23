@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>{{valorRecebido}}</ion-title>
+    <ion-title>{{ movie?.title_year }}</ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="tabs/tab3"></ion-back-button>
     </ion-buttons>
@@ -8,40 +8,33 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
-  <ion-grid *ngFor="let movie of dataMovies | keyvalue" class="ion-margin">
+  <ion-grid class="ion-margin" *ngIf="movie">
     <ion-row>
       <ion-col size="12">
-        <ion-card button ='true'>
-          <img src={{movie.value.big_img}}>
+        <ion-card button="true">
+          <img [src]="movie.big_img">
         </ion-card>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="4">
-        <img src={{movie.value.img}} class="capa">
+        <img [src]="movie.img" class="capa">
       </ion-col>
     </ion-row>
-    <ion-col class= "titulo"> {{ movie.value.title_year }}</ion-col>
-    <ion-row class= "imdb">{{ movie.value.imdb_rating }}</ion-row>
+    <ion-col class="titulo">{{ movie.title_year }}</ion-col>
+    <ion-row class="imdb">{{ movie.imdb_rating }}</ion-row>
     <img src="assets/img/imdb_logo.png" class="logo_imdb">
     <ion-text class="genero">Género:</ion-text>
-    <ion-text class= "genre">{{ movie.value.genre }}</ion-text>
+    <ion-text class="genre">{{ movie.genre }}</ion-text>
     <ion-text class="duracao">Duração:</ion-text>
-    <ion-text class= "duration">{{ movie.value.duration }}</ion-text>
-    <ion-button class="botao">+  Ver mais tarde</ion-button>
+    <ion-text class="duration">{{ movie.duration }}</ion-text>
+    <ion-button class="botao">+ Ver mais tarde</ion-button>
     <ion-text class="transmissao">Disponível em:</ion-text>
-    <img src={{movie.value.channel}} class="channel">
+    <img [src]="movie.channel" class="channel">
     <ion-text class="sinopse">Sinopse:</ion-text>
-    <ion-text class= "synopsis">{{ movie.value.synopsis }}</ion-text>
+    <ion-text class="synopsis">{{ movie.synopsis }}</ion-text>
     <ion-text class="trailer">Trailer:</ion-text>
-    
-    
-    <!--iframe width="360" height="360" src="https://www.youtube.com/embed/eHp3MbsCbMg" frameborder="0" allowfullscreen></iframe-->
-    <iframe width="360" height="360" [src]= "movie?.value?.video" frameborder="0" allowfullscreen></iframe>
-    
-      
-  </ion-grid>
 
-  
+    <iframe width="360" height="360" [src]="movie.video" frameborder="0" allowfullscreen></iframe>
+  </ion-grid>
 </ion-content>

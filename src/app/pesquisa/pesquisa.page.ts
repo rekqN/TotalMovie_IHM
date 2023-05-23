@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface Movie {
   id: string;
@@ -21,19 +22,25 @@ interface Movie {
 export class PesquisaPage implements OnInit {
   public dataMovies: Movie[] = [];
   public termoBusca: string = '';
+  public filmesEncontrados: Movie[] = [];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     this.carregarDadosMovies();
   }
 
   carregarDadosMovies() {
-    fetch('./assets/data/movies.json')
+    fetch('./assets/dados/movies.json')
       .then((response) => response.json())
       .then((json) => {
-        this.dataMovies = json;
-        console.log('Dados dos filmes carregados:', this.dataMovies);
+        // Verifica se o JSON é um array
+        if (Array.isArray(json)) {
+          this.dataMovies = json;
+          console.log('Dados dos filmes carregados:', this.dataMovies);
+        } else {
+          console.error('O arquivo JSON não contém um array de filmes.');
+        }
       })
       .catch((error) => {
         console.error('Erro ao carregar dados dos filmes:', error);
@@ -41,21 +48,31 @@ export class PesquisaPage implements OnInit {
   }
 
   pesquisar() {
+    console.log(this.dataMovies);
     if (this.termoBusca) {
       const termo = this.termoBusca.toLowerCase();
 
-      const filmesEncontrados = this.dataMovies.filter((movie) =>
-        movie.title_year.toLowerCase().includes(termo)
-      );
+      // Verifica se this.dataMovies é um array antes de usar a função filter
+      if (Array.isArray(this.dataMovies)) {
+        this.filmesEncontrados = this.dataMovies.filter((movie) =>
+          movie.title_year.toLowerCase().includes(termo)
+        );
 
-      if (filmesEncontrados.length > 0) {
-        console.log('Correspondências encontradas! Filmes:', filmesEncontrados);
-        // Faça o que deseja com os filmes encontrados
+        if (this.filmesEncontrados.length > 0) {
+          console.log('Correspondências encontradas! Filmes:', this.filmesEncontrados);
+        } else {
+          console.log('Nenhum filme encontrado.');
+        }
       } else {
-        console.log('Nenhum filme encontrado.');
+        console.error('this.dataMovies não é um array de filmes.');
       }
     } else {
       console.log('Digite um termo de busca.');
     }
+  }
+
+  redirecionarFilme(movie: Movie) {
+    // Redirecionar para a página 'filme' com o ID do filme como parâmetro na URL
+    this.router.navigate(['/filme', movie.id]);
   }
 }

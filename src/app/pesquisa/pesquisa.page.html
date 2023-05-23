@@ -7,6 +7,21 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-  </ion-header>
+  <ion-grid class="ion-margin">
+    <ion-row>
+      <ion-col>
+        <h2 *ngIf="filmesEncontrados.length > 0" class="resultado">Resultados da pesquisa: {{ termoBusca }}</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let movie of filmesEncontrados">
+      <ion-col size="4">
+        <img *ngIf="movie.img" [src]="movie.img" class="capa" (click)="redirecionarFilme(movie)">
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="filmesEncontrados.length === 0">
+      <ion-col>
+        <p class="resultado">Nenhum filme encontrado.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
