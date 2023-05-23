@@ -1,0 +1,27 @@
+[
+    {
+      "id": "1",
+      "title_year": "Alfaiate",
+      "imdb_rating": "9.0",
+      "genre": "Cenas e coisas",
+      "duration": "2h19min",
+      "channel": "assets/img/hbo.png",
+      "synopsis": "É um gajo qualquer a fazer qualquer coisa",
+      "img": "assets/img/alfaiate.jpg",
+      "big_img": "assets/img/uncharted2.png",
+      "video": "https://www.youtube.com/embed/eHp3MbsCbMg"
+  },
+  {
+    "id": "2",
+    "title_year": "Black_Adam",
+    "imdb_rating": "8.0",
+    "genre": "Muita ação",
+    "duration": "2h00min",
+    "channel": "assets/img/hbo.png",
+    "synopsis": "É um gajo qualquer a fazer qualquer coisa",
+    "img": "assets/img/Black_Adam.jpg",
+    "big_img": "assets/img/uncharted2.png",
+    "video": "https://www.youtube.com/embed/eHp3MbsCbMg"
+}
+
+]
