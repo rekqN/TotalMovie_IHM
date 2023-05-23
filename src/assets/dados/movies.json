@@ -2,13 +2,15 @@
     "uncharted": {
       "id": "1",
       "title_year": "Uncharted [1995]",
-      "imdb_rating": "7.0",
+      "imdb_rating": "8.0",
       "genre": "Ação & Aventura",
       "duration": "2h19min",
+      "channel": "assets/img/hbo.png",
       "synopsis": "É um gajo qualquer a fazer qualquer coisa",
       "img": "assets/img/uncharted.jpg",
       "big_img": "assets/img/uncharted2.png",
       "video": "https://www.youtube.com/embed/eHp3MbsCbMg"
     }
+
 
   }

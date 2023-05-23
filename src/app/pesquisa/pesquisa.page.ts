@@ -17,23 +17,19 @@ interface Movies {
 }
 
 @Component({
-  selector: 'app-filme',
-  templateUrl: './filme.page.html',
-  styleUrls: ['./filme.page.scss'],
+  selector: 'app-pesquisa',
+  templateUrl: './pesquisa.page.html',
+  styleUrls: ['./pesquisa.page.scss'],
 })
-export class FilmePage implements OnInit {
-  public valorRecebido: any;
+export class PesquisaPage implements OnInit {
   public dataMovies: Movies = {};
 
-  constructor(private route: ActivatedRoute) {}
+  constructor() { }
 
   ngOnInit() {
-    
-    this.valorRecebido = this.route.snapshot.paramMap.get('id');
-    fetch('./assets/dados/movies.json')
-      .then((res) => res.json())
-      .then((json) => {
-        this.dataMovies = json;
-      });
+  }
+  
+  Pesquisa(){
+
   }
 }

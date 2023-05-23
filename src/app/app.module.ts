@@ -11,10 +11,13 @@ import { IonicStorageModule } from '@ionic/storage-angular';
 import { Drivers } from '@ionic/storage';
 import { Storage } from '@ionic/storage-angular';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicStorageModule.forRoot()],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicStorageModule.forRoot(), HttpClientModule],
   providers: [Storage, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
+
 export class AppModule {}

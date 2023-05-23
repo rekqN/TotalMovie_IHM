@@ -1,18 +1,9 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons class="ion-margin-start" slot="start">
-      <ion-icon style= "font-size: 36px;" name= "caret-forward-circle-outline"></ion-icon>
-    </ion-buttons>
-    <ion-title>
-      Fóruns
-    </ion-title>
+  <ion-toolbar class="toolbar"> 
+    <ion-icon name="search-outline" class="search-icon"></ion-icon>
+      <input type="text" placeholder="Busca por filmes, séries..." class ="barra_pesquisa">
+      <ion-icon name="arrow-back-outline" class="back-icon"></ion-icon>
   </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <!--ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tab5</ion-title>
-    </ion-toolbar>
-  </ion-header-->
-</ion-content>
+
+</ion-header>
