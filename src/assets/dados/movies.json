@@ -1,234 +1,218 @@
 [
-
   {
-        "id": "1",
-        "title_year": "Uncharted [2022]",
-        "imdb_rating": "6.3",
-        "genre": "Ação & Aventura",
-        "duration": "1h56mim",
-        "channel": "assets/img/hbo.png",
-        "synopsis": "O perspicaz Nathan Drake é recrutado pelo experiente caçador de tesouros Victor “Sully” Sullivan para recuperar a fortuna arrecadada por Fernão de Magalhães e perdida há 500 anos pela Casa de Moncada. O que começa como um golpe, rapidamente se torna numa corrida pelo mundo para encontrar este tesouro antes do implacável Santiago Moncada, que acredita que ele e a sua família são os seus legítimos herdeiros. Se Nate e Sully conseguirem decifrar as pistas e resolver um dos mais antigos mistérios do mundo, irão alcançar o tesouro de 5 mil milhões e talvez até o irmão desaparecido de Nate... isto se aprenderem a trabalhar em equipa.",
-        "img": "assets/img/uncharted.jpg",
-        "big_img": "assets/img/uncharted2.png",
-        "video": "https://www.youtube.com/embed/eHp3MbsCbMg"
+    "id": "1",
+    "title_year": "Uncharted [2022]",
+    "imdb_rating": "6.3",
+    "genre": "Ação & Aventura",
+    "duration": "1h56mim",
+    "channel": "assets/img/hbo.png",
+    "synopsis": "O perspicaz Nathan Drake é recrutado pelo experiente caçador de tesouros Victor “Sully” Sullivan para recuperar a fortuna arrecadada por Fernão de Magalhães e perdida há 500 anos pela Casa de Moncada. O que começa como um golpe, rapidamente se torna numa corrida pelo mundo para encontrar este tesouro antes do implacável Santiago Moncada, que acredita que ele e a sua família são os seus legítimos herdeiros. Se Nate e Sully conseguirem decifrar as pistas e resolver um dos mais antigos mistérios do mundo, irão alcançar o tesouro de 5 mil milhões e talvez até o irmão desaparecido de Nate... isto se aprenderem a trabalhar em equipa.",
+    "img": "assets/img/uncharted.jpg",
+    "big_img": "assets/img/uncharted2.png",
+    "video": "https://www.youtube.com/embed/eHp3MbsCbMg"
   },
-  
   {
-        "id": "2",
-        "title_year": "The Outfit [2022]",
-        "imdb_rating": "7.2",
-        "genre": "Crime, Drama, Mistério e Thriller",
-        "duration": "1h45mim",
-        "channel": "assets/img/",
-        "synopsis": "Leonard é um alfaiate inglês que costumava fazer fatos na mundialmente famosa Savile Row, em Londres. Depois de uma tragédia pessoal, acabou em Chicago a administrar uma pequena alfaiataria numa zona difícil da cidade, onde faz bonitas roupas para as únicas pessoas da zona que podem pagar: uma família de cruéis gangsters.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
-   },
-  
-   {
-        "id": "3",
-        "title_year": "The Banker [2020]",
-        "imdb_rating": "7.3",
-        "genre": "Drama",
-        "duration": "2h00mim",
-        "channel": "assets/img/",
-        "synopsis": "Texas, década de 1950. Joe Morris e Bernard Garrett são dois empresários afro-americanos que resolvem contratar Matt Steiner, um homem branco da classe trabalhadora, para se passar por chefe deles.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+    "id": "2",
+    "title_year": "The Outfit [2022]",
+    "imdb_rating": "7.2",
+    "genre": "Crime, Drama, Mistério e Thriller",
+    "duration": "1h45mim",
+    "channel": "assets/img/",
+    "synopsis": "Leonard é um alfaiate inglês que costumava fazer fatos na mundialmente famosa Savile Row, em Londres. Depois de uma tragédia pessoal, acabou em Chicago a administrar uma pequena alfaiataria numa zona difícil da cidade, onde faz bonitas roupas para as únicas pessoas da zona que podem pagar: uma família de cruéis gangsters.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
   {
-        "id": "4",
-        "title_year": "Black Adam [2022]",
-        "imdb_rating": "6.3",
-        "genre": "Fantasia, Ficção Científica, Ação & Aventura",
-        "duration": "2h05mim",
-        "channel": "assets/img/",
-        "synopsis": "O mundo precisa de um herói e só tem Black Adam. Quase 5.000 anos depois de lhe terem sido concedidos os poderes ilimitados dos antigos Deuses – e de ter sido aprisionado – Black Adam é libertado do seu túmulo na Terra, e prepara-se para usar a sua forma única de justiça no mundo moderno.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+    "id": "3",
+    "title_year": "The Banker [2020]",
+    "imdb_rating": "7.3",
+    "genre": "Drama",
+    "duration": "2h00mim",
+    "channel": "assets/img/",
+    "synopsis": "Texas, década de 1950. Joe Morris e Bernard Garrett são dois empresários afro-americanos que resolvem contratar Matt Steiner, um homem branco da classe trabalhadora, para se passar por chefe deles.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
-   {
-        "id": "5",
-        "title_year": "Velocidade Furiosa 9 [2021]",
-        "imdb_rating": "5.2",
-        "genre": "Mistério & Thriller, Ação & Aventura, Crime",
-        "duration": "2h23mim",
-        "channel": "assets/img/",
-        "synopsis": "Dom Toretto (Vin Diesel) leva uma vida tranquila, longe de tudo, com Letty (Michelle Rodriguez) e o seu filho, o pequeno Brian. Mas todos sabem que para lá do horizonte pacífico, o perigo está sempre à espreita. Desta vez, esta ameaça vai forçar Dom a enfrentar os pecados do seu passado para conseguir salvar aqueles que mais ama. A sua equipa volta a unir-se para travar um plano que vai chocar o mundo, liderado pelo melhor condutor e maior assassino que alguma vez encontraram: Jakob (John Cena), o irmão abandonado de Dom.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "4",
+    "title_year": "Black Adam [2022]",
+    "imdb_rating": "6.3",
+    "genre": "Fantasia, Ficção Científica, Ação & Aventura",
+    "duration": "2h05mim",
+    "channel": "assets/img/",
+    "synopsis": "O mundo precisa de um herói e só tem Black Adam. Quase 5.000 anos depois de lhe terem sido concedidos os poderes ilimitados dos antigos Deuses – e de ter sido aprisionado – Black Adam é libertado do seu túmulo na Terra, e prepara-se para usar a sua forma única de justiça no mundo moderno.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
-  
-   {
-        "id": "6",
-        "title_year": "The Night Agent [2023]",
-        "imdb_rating": "7.5",
-        "genre": "Drama, Mistério & Thriller, Ação & Aventura",
-        "duration": "48mim",
-        "channel": "assets/img/netflix.png",
-        "synopsis": "Enquanto monitorava uma linha de emergência, um agente vigilante do FBI atende a uma ligação que o mergulha em uma conspiração mortal envolvendo um infiltrado na Casa Branca.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "5",
+    "title_year": "Velocidade Furiosa 9 [2021]",
+    "imdb_rating": "5.2",
+    "genre": "Mistério & Thriller, Ação & Aventura, Crime",
+    "duration": "2h23mim",
+    "channel": "assets/img/",
+    "synopsis": "Dom Toretto (Vin Diesel) leva uma vida tranquila, longe de tudo, com Letty (Michelle Rodriguez) e o seu filho, o pequeno Brian. Mas todos sabem que para lá do horizonte pacífico, o perigo está sempre à espreita. Desta vez, esta ameaça vai forçar Dom a enfrentar os pecados do seu passado para conseguir salvar aqueles que mais ama. A sua equipa volta a unir-se para travar um plano que vai chocar o mundo, liderado pelo melhor condutor e maior assassino que alguma vez encontraram: Jakob (John Cena), o irmão abandonado de Dom.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
-   {
-        "id": "7",
-        "title_year": "House of Gucci [2021]",
-        "imdb_rating": "6.6",
-        "genre": "Drama, Crime, História, Mistério & Thriller",
-        "duration": "2h38mim",
-        "channel": "assets/img/",
-        "synopsis": "Inspirado na chocante história verídica dos bastidores da família detentora do império da moda italiana. Quando Patrizia Reggiani (Lady Gaga), uma desconhecida de origem humilde, se casa com Maurizio Gucci (Adam Driver), a sua ambição desmedida começa a desencadear no legado da família uma imparável espiral de traição, destruição e vingança que culmina... num assassínio.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "6",
+    "title_year": "The Night Agent [2023]",
+    "imdb_rating": "7.5",
+    "genre": "Drama, Mistério & Thriller, Ação & Aventura",
+    "duration": "48mim",
+    "channel": "assets/img/netflix.png",
+    "synopsis": "Enquanto monitorava uma linha de emergência, um agente vigilante do FBI atende a uma ligação que o mergulha em uma conspiração mortal envolvendo um infiltrado na Casa Branca.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
-   {
-        "id": "8",
-        "title_year": "Emma [2020]",
-        "imdb_rating": "6.7",
-        "genre": "Drama, Romance, Comédia",
-        "duration": "2h04mim",
-        "channel": "assets/img/",
-        "synopsis": "Emma Woodhouse é uma jovem rica e inteligente, que não tem pretensões de se casar tão cedo, para ficar sempre perto do pai. Porém, isso não a impede de dar uma de ‘casamenteira’, tentando juntar casais que considere apropriados entre seus conhecidos, sem perceber os problemas causados com sua imaginação e teimosia.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "7",
+    "title_year": "House of Gucci [2021]",
+    "imdb_rating": "6.6",
+    "genre": "Drama, Crime, História, Mistério & Thriller",
+    "duration": "2h38mim",
+    "channel": "assets/img/",
+    "synopsis": "Inspirado na chocante história verídica dos bastidores da família detentora do império da moda italiana. Quando Patrizia Reggiani (Lady Gaga), uma desconhecida de origem humilde, se casa com Maurizio Gucci (Adam Driver), a sua ambição desmedida começa a desencadear no legado da família uma imparável espiral de traição, destruição e vingança que culmina... num assassínio.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
-   {
-        "id": "9",
-        "title_year": "The Womam King [2022]",
-        "imdb_rating": "6.8",
-        "genre": "Drama, História, Ação & Aventura",
-        "duration": "2h15mim",
-        "channel": "assets/img/",
-        "synopsis": "A extraordinária história de Agojie, a unidade de guerreiras amazonas que protegeu o reino africano de Daomé no início do século XIX com uma capacidade de uma ferocidade diferente de tudo o que o mundo já viu. Inspirado em factos reais, A Mulher Rei relata a jornada épica da General Nanisca enquanto treina a próxima geração de recrutas e as prepara para a batalha contra um inimigo determinado a destruir o seu modo de vida. Há coisas pelas quais vale a pena lutar..",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "8",
+    "title_year": "Emma [2020]",
+    "imdb_rating": "6.7",
+    "genre": "Drama, Romance, Comédia",
+    "duration": "2h04mim",
+    "channel": "assets/img/",
+    "synopsis": "Emma Woodhouse é uma jovem rica e inteligente, que não tem pretensões de se casar tão cedo, para ficar sempre perto do pai. Porém, isso não a impede de dar uma de ‘casamenteira’, tentando juntar casais que considere apropriados entre seus conhecidos, sem perceber os problemas causados com sua imaginação e teimosia.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
-   {
-        "id": "10",
-        "title_year": "The Mandalorian [2019]",
-        "imdb_rating": "8.7",
-        "genre": "Ação & Aventura, Drama, Ficção Científica, Fantasia",
-        "duration": "41mim",
-        "channel": "assets/img/",
-        "synopsis": "Depois das histórias de Jango e Boba Fett, outro guerreiro surge no universo de Star Wars. O Mandaloriano (também conhecido como Star Wars: The Mandalorian) situa-se depois da queda do Império e antes do surgimento da Primeira Ordem, a linha de tempo desta série acontece cinco anos após os eventos de Return of the Jedi (Star Wars: Episódio VI - O Regresso de Jedi). Acompanhando os percalços de um pistoleiro solitário nos confins da Galáxia, longe da autoridade da Nova República.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "9",
+    "title_year": "The Womam King [2022]",
+    "imdb_rating": "6.8",
+    "genre": "Drama, História, Ação & Aventura",
+    "duration": "2h15mim",
+    "channel": "assets/img/",
+    "synopsis": "A extraordinária história de Agojie, a unidade de guerreiras amazonas que protegeu o reino africano de Daomé no início do século XIX com uma capacidade de uma ferocidade diferente de tudo o que o mundo já viu. Inspirado em factos reais, A Mulher Rei relata a jornada épica da General Nanisca enquanto treina a próxima geração de recrutas e as prepara para a batalha contra um inimigo determinado a destruir o seu modo de vida. Há coisas pelas quais vale a pena lutar..",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
-   {
-        "id": "11",
-        "title_year": "The Mandalorian [2019]",
-        "imdb_rating": "8.7",
-        "genre": "Drama, Ficção Científica, Fantasia, Terror, Mistério & Thriller",
-        "duration": "1h01mim",
-        "channel": "assets/img/",
-        "synopsis": "Quando um rapaz desaparece, uma pequena vila descobre um mistério relacionado com experiências secretas, assustadoras forças sobrenaturais e uma estranha rapariga.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "10",
+    "title_year": "The Mandalorian [2019]",
+    "imdb_rating": "8.7",
+    "genre": "Ação & Aventura, Drama, Ficção Científica, Fantasia",
+    "duration": "41mim",
+    "channel": "assets/img/",
+    "synopsis": "Depois das histórias de Jango e Boba Fett, outro guerreiro surge no universo de Star Wars. O Mandaloriano (também conhecido como Star Wars: The Mandalorian) situa-se depois da queda do Império e antes do surgimento da Primeira Ordem, a linha de tempo desta série acontece cinco anos após os eventos de Return of the Jedi (Star Wars: Episódio VI - O Regresso de Jedi). Acompanhando os percalços de um pistoleiro solitário nos confins da Galáxia, longe da autoridade da Nova República.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-   {
-        "id": "12",
-        "title_year": "The Flash [2014]",
-        "imdb_rating": "7.5",
-        "genre": "Drama, Ficção Científica, Ação & Aventura",
-        "duration": "42mim",
-        "channel": "assets/img/",
-        "synopsis": "Depois de ser atingido por um raio e ficar em coma durante nove meses, o investigador da polícia Barry Allen desperta com uma velocidade relâmpago e a ambição de se tornar um super-herói, o Flash.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "11",
+    "title_year": "The Mandalorian [2019]",
+    "imdb_rating": "8.7",
+    "genre": "Drama, Ficção Científica, Fantasia, Terror, Mistério & Thriller",
+    "duration": "1h01mim",
+    "channel": "assets/img/",
+    "synopsis": "Quando um rapaz desaparece, uma pequena vila descobre um mistério relacionado com experiências secretas, assustadoras forças sobrenaturais e uma estranha rapariga.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-   {
-        "id": "13",
-        "title_year": "Everything Everywhere All at Once [2022]",
-        "imdb_rating": "7.9",
-        "genre": "Ficção Científica, Ação & Aventura, Comédia, Fantasia",
-        "duration": "2h20mim",
-        "channel": "assets/img/",
-        "synopsis": "Evelyn Wang é uma imigrante chinesa nos Estados Unidos que tem a dura missão de salvar o mundo atravessando vários universos paralelos e explorando todas as vidas que não chegou a viver.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "12",
+    "title_year": "The Flash [2014]",
+    "imdb_rating": "7.5",
+    "genre": "Drama, Ficção Científica, Ação & Aventura",
+    "duration": "42mim",
+    "channel": "assets/img/",
+    "synopsis": "Depois de ser atingido por um raio e ficar em coma durante nove meses, o investigador da polícia Barry Allen desperta com uma velocidade relâmpago e a ambição de se tornar um super-herói, o Flash.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-   {
-        "id": "14",
-        "title_year": "Bloodshot [2020]",
-        "imdb_rating": "5.7",
-        "genre": "Ficção Científica, Ação & Aventura, Drama, Fantasia",
-        "duration": "1h50mim",
-        "channel": "assets/img/",
-        "synopsis": "Após ele e sua esposa serem assassinados, o fuzileiro naval Ray Garrison é ressuscitado por uma equipe de cientistas. Aprimorado com nanotecnologia, ele se torna uma máquina de matar super-humana e biotecnológica, conhecida como 'Bloodshot'. Enquanto Ray treina com outros super-soldados, ele não consegue se lembrar de nada de sua vida anterior. Mas quando suas memórias voltam e ele se lembra do homem que os matou, a ele e sua esposa, ele escapa das instalações para se vingar, apenas para descobrir que há mais na conspiração do que ele imaginava.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "13",
+    "title_year": "Everything Everywhere All at Once [2022]",
+    "imdb_rating": "7.9",
+    "genre": "Ficção Científica, Ação & Aventura, Comédia, Fantasia",
+    "duration": "2h20mim",
+    "channel": "assets/img/",
+    "synopsis": "Evelyn Wang é uma imigrante chinesa nos Estados Unidos que tem a dura missão de salvar o mundo atravessando vários universos paralelos e explorando todas as vidas que não chegou a viver.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
-   {
-        "id": "15",
-        "title_year": "Bumblebee [2018]",
-        "imdb_rating": "6.7",
-        "genre": "Ficção Científica, Ação & Aventura",
-        "duration": "3h07mim",
-        "channel": "assets/img/",
-        "synopsis": "Em fuga no ano de 1987, Bumblebee encontra refúgio em um ferro-velho em uma pequena cidade litorânea da Califórnia. Charlie, prestes a completar 18 anos e tentando encontrar seu lugar no mundo, descobre Bumblebee, marcado pela batalha e quebrado. Quando Charlie o reanima, ela rapidamente descobre que este não é um simples fusca amarelo.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "14",
+    "title_year": "Bloodshot [2020]",
+    "imdb_rating": "5.7",
+    "genre": "Ficção Científica, Ação & Aventura, Drama, Fantasia",
+    "duration": "1h50mim",
+    "channel": "assets/img/",
+    "synopsis": "Após ele e sua esposa serem assassinados, o fuzileiro naval Ray Garrison é ressuscitado por uma equipe de cientistas. Aprimorado com nanotecnologia, ele se torna uma máquina de matar super-humana e biotecnológica, conhecida como 'Bloodshot'. Enquanto Ray treina com outros super-soldados, ele não consegue se lembrar de nada de sua vida anterior. Mas quando suas memórias voltam e ele se lembra do homem que os matou, a ele e sua esposa, ele escapa das instalações para se vingar, apenas para descobrir que há mais na conspiração do que ele imaginava.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
-   {
-        "id": "16",
-        "title_year": "Lucy [2014]",
-        "imdb_rating": "6.4",
-        "genre": "Ação & Aventura, Ficção Científica, Mistério & Thriller",
-        "duration": "1h29mim",
-        "channel": "assets/img/",
-        "synopsis": "Um thriller de ação sobre uma mulher que se envolve acidentalmente num negócio obscuro, que acaba por dar uma reviravolta e se transformar numa implacável guerreira que evolui além da lógica humana.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "15",
+    "title_year": "Bumblebee [2018]",
+    "imdb_rating": "6.7",
+    "genre": "Ficção Científica, Ação & Aventura",
+    "duration": "3h07mim",
+    "channel": "assets/img/",
+    "synopsis": "Em fuga no ano de 1987, Bumblebee encontra refúgio em um ferro-velho em uma pequena cidade litorânea da Califórnia. Charlie, prestes a completar 18 anos e tentando encontrar seu lugar no mundo, descobre Bumblebee, marcado pela batalha e quebrado. Quando Charlie o reanima, ela rapidamente descobre que este não é um simples fusca amarelo.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
-   {
-        "id": "17",
-        "title_year": "Teen Wolf: The Movie [2023]",
-        "imdb_rating": "5.5",
-        "genre": "Fantasia, Ação & Aventura, Comédia, Drama, Romance, Mistério & Thriller",
-        "duration": "2h20mim",
-        "channel": "assets/img/",
-        "synopsis": "Os lobos estão uivando mais uma vez, à medida que um antigo mal aterrorizante emerge em Beacon Hills. Scott McCall, que já não é mais um adolescente, mas ainda é um Alfa, precisa reunir novos aliados e reunir amigos de confiança para combater esse inimigo poderoso e mortal.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "16",
+    "title_year": "Lucy [2014]",
+    "imdb_rating": "6.4",
+    "genre": "Ação & Aventura, Ficção Científica, Mistério & Thriller",
+    "duration": "1h29mim",
+    "channel": "assets/img/",
+    "synopsis": "Um thriller de ação sobre uma mulher que se envolve acidentalmente num negócio obscuro, que acaba por dar uma reviravolta e se transformar numa implacável guerreira que evolui além da lógica humana.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   },
-  
-   {
-        "id": "18",
-        "title_year": "Code 8 [2019]",
-        "imdb_rating": "6.1",
-        "genre": "Mistério & Thriller, Drama, Ficção Científica, Ação & Aventura, Crime",
-        "duration": "1h39mim",
-        "channel": "assets/img/",
-        "synopsis": "Num mundo onde pessoas com habilidades “especiais” vivem na pobreza, Conner Reed é um jovem poderoso que está a lutar para pagar pelo tratamento médico da sua mãe doente. Para ganhar dinheiro, ele entra num mundo criminoso e lucrativo, liderado por Garrett, que trabalha para um traficante de drogas.",
-        "img": "assets/img/",
-        "big_img": "assets/img/",
-        "video": ""
+  {
+    "id": "17",
+    "title_year": "Teen Wolf: The Movie [2023]",
+    "imdb_rating": "5.5",
+    "genre": "Fantasia, Ação & Aventura, Comédia, Drama, Romance, Mistério & Thriller",
+    "duration": "2h20mim",
+    "channel": "assets/img/",
+    "synopsis": "Os lobos estão uivando mais uma vez, à medida que um antigo mal aterrorizante emerge em Beacon Hills. Scott McCall, que já não é mais um adolescente, mas ainda é um Alfa, precisa reunir novos aliados e reunir amigos de confiança para combater esse inimigo poderoso e mortal.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
+  },
+  {
+    "id": "18",
+    "title_year": "Code 8 [2019]",
+    "imdb_rating": "6.1",
+    "genre": "Mistério & Thriller, Drama, Ficção Científica, Ação & Aventura, Crime",
+    "duration": "1h39mim",
+    "channel": "assets/img/",
+    "synopsis": "Num mundo onde pessoas com habilidades “especiais” vivem na pobreza, Conner Reed é um jovem poderoso que está a lutar para pagar pelo tratamento médico da sua mãe doente. Para ganhar dinheiro, ele entra num mundo criminoso e lucrativo, liderado por Garrett, que trabalha para um traficante de drogas.",
+    "img": "assets/img/",
+    "big_img": "assets/img/",
+    "video": ""
   }
-  ]
+]
