@@ -9,25 +9,45 @@
 
 <ion-content [fullscreen]="true">
 
-  <ion-grid>
+  <ion-grid *ngFor="let movie of dataMovies | keyvalue" class="ion-margin">
     <ion-row>
       <ion-col size="12">
         <ion-card button ='true' class="trailer">
-          <img src="assets/img/uncharted2.png">
+          <img src={{movie.value.big_img}}>
         </ion-card>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="4"><img src="assets/img/uncharted.jpg" class="capa"></ion-col>
+      <ion-col size="4">
+        <img src={{movie.value.img}} class="capa">
+        
+      </ion-col>
       <ion-grid>
         <ion-row>
           <ion-col size="10"></ion-col>
         </ion-row>
       </ion-grid>
     </ion-row>
-  </ion-grid>
+    <ion-col class= "titulo"> {{ movie.value.title_year }}</ion-col>
+    <ion-row class= "imdb">{{ movie.value.imdb_rating }}</ion-row>
+    <img src="assets/img/imdb_logo.png" class="logo_imdb">
+    <ion-text class="genero">Género:</ion-text>
+    <ion-text class= "genre">{{ movie.value.genre }}</ion-text>
+    <ion-text class="duracao">Duração:</ion-text>
+    <ion-text class= "duration">{{ movie.value.duration }}</ion-text>
+    <ion-button class="botao">+  Ver mais tarde</ion-button>
+    <ion-text class="sinopse">Sinopse:</ion-text>
+    <ion-text class= "synopsis">{{ movie.value.synopsis }}</ion-text>
 
+    <iframe width="360" height="360" src="https://www.youtube.com/embed/eHp3MbsCbMg" frameborder="0" allowfullscreen></iframe>
+    
   
+     
+      
+      
+      
+    
+  </ion-grid>
 
   
 </ion-content>

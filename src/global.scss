@@ -25,11 +25,15 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+:root{
+  --gradiente: linear-gradient(to bottom, #000000, #91C6FC);
+}
+
 ion-content {
-    --background: linear-gradient(to bottom, #000000, #91C6FC);
+    --background: var(--gradiente);
   }
 
   form{
-    --background: linear-gradient(to bottom, #000000, #91C6FC);
+    --background: var(--gradiente);
   }
 
