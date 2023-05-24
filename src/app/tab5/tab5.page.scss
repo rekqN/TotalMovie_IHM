@@ -33,3 +33,14 @@ input.barra_pesquisa {
     width: 24px;
     height: 24px;
 }
+
+.createComment {
+    position: absolute;
+    --background: #b7f399;
+    --background-activated: #87d361;
+    //--background-hover: #0000ff; //#a3e68
+}
+
+.createComment:hover {
+    --background: #0000ff;
+}
