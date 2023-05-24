@@ -1,14 +1,3 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons class="ion-margin-start" slot="start">
-      <ion-icon style="font-size: 36px;" name="caret-forward-circle-outline"></ion-icon>
-    </ion-buttons>
-    <ion-title>
-      Listas
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-list>
     <ion-item *ngFor="let filme of filmesVerMaisTarde">
@@ -19,6 +8,7 @@
         <h2>{{ filme.tituloYear }}</h2>
         <p>{{ filme.username }}</p>
       </ion-label>
+      <ion-icon name="trash-outline" class="trash" (click)="removerFilme(filme)"></ion-icon>
     </ion-item>
   </ion-list>
 </ion-content>

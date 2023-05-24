@@ -35,12 +35,14 @@ input.barra_pesquisa {
 }
 
 .createComment {
-    position: absolute;
+    position: relative;
     --background: #b7f399;
     --background-activated: #87d361;
-    //--background-hover: #0000ff; //#a3e68
+    --color: black;
+    top: 724px;
+    left: 320px;
 }
 
-.createComment:hover {
-    --background: #0000ff;
+header {
+    background-image: './assets/img/capaFilmesIonic.png';
 }

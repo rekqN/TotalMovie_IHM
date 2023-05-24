@@ -75,3 +75,18 @@
       font-size: 22px;
       top: 20px;
     }
+
+    .scroll-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .container_scroll {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    
+    .clear-row {
+      clear: both;
+    }
