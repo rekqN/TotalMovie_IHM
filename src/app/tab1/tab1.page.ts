@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
+import { Storage } from '@ionic/storage-angular';
 
 interface Movie {
   id: string;
@@ -22,10 +23,30 @@ interface Movie {
 })
 export class Tab1Page implements OnInit {
   public dataMovies: Movie[] = [];
+  public username: string = '';
 
-  constructor(private router: Router,private route: ActivatedRoute) {}
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private storage: Storage
+  ) {}
 
-  ngOnInit() {
+  async ngOnInit() {
+    await this.storage.create(); // Cria o banco de dados
+
+    this.storage.get('username')
+      .then((username) => {
+        if (username) {
+          this.username = username;
+          console.log('Username recuperado:', this.username);
+        } else {
+          console.log('Nenhum username encontrado');
+        }
+      })
+      .catch((error) => {
+        console.error('Erro ao recuperar o username:', error);
+      });
+
     fetch('./assets/dados/movies.json')
       .then((res) => res.json())
       .then((json) => {

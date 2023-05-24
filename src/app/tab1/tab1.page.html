@@ -19,6 +19,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-text class="username">Bem-vindo, {{ username }}</ion-text> <!-- Exibe "Bem-vindo" junto com o username -->
   <ion-grid>
     <ion-row>
       <ion-col size="3" *ngFor="let movie of dataMovies" class="ion-margin">

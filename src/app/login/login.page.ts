@@ -44,7 +44,14 @@ export class LoginPage implements OnInit {
     if (this.validateInput()) {
       if (this.checkCredentials()) {
         console.log('Sucesso');
-        this.router.navigateByUrl('/tabs/tab1');
+        this.storage.set('username', this.inputlogin.username)
+          .then(() => {
+            console.log('Username armazenado com sucesso');
+            this.router.navigateByUrl('/tabs/tab1');
+          })
+          .catch((error) => {
+            console.error('Erro ao armazenar o username:', error);
+          });
       } else {
         console.log('As credenciais introduzidas estão incorretas!');
       }
