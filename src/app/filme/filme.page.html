@@ -1,12 +1,3 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>{{ movie?.title_year }}</ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs/tab3"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-grid class="ion-margin" *ngIf="movie">
     <ion-row>
@@ -21,20 +12,30 @@
         <img [src]="movie.img" class="capa">
       </ion-col>
     </ion-row>
-    <ion-col class="titulo">{{ movie.title_year }}</ion-col>
-    <ion-row class="imdb">{{ movie.imdb_rating }}</ion-row>
-    <img src="assets/img/imdb_logo.png" class="logo_imdb">
-    <ion-text class="genero">Género:</ion-text>
-    <ion-text class="genre">{{ movie.genre }}</ion-text>
+    <ion-col class="titulo info">{{ movie.title_year }}</ion-col>
+    <ion-row class="imdb info">{{ movie.imdb_rating }}</ion-row>
+    <img src="assets/img/imdb_logo.png" class="logo_imdb info">
+    <br>
     <ion-text class="duracao">Duração:</ion-text>
-    <ion-text class="duration">{{ movie.duration }}</ion-text>
-    <ion-button class="botao">+ Ver mais tarde</ion-button>
-    <ion-text class="transmissao">Disponível em:</ion-text>
-    <img [src]="movie.channel" class="channel">
-    <ion-text class="sinopse">Sinopse:</ion-text>
-    <ion-text class="synopsis">{{ movie.synopsis }}</ion-text>
-    <ion-text class="trailer">Trailer:</ion-text>
-
-    <!--iframe width="360" height="360" [src]="movie.video" frameborder="0" allowfullscreen></iframe-->
+    <ion-text class="duration info">{{ movie.duration }}</ion-text>
+    <br>
+    <ion-text class="transmissao info">Disponível em:</ion-text>
+    <img [src]="movie.channel" class="channel info">
+    <br>
+    <ion-button class="botao info">+ Ver mais tarde</ion-button>
+    <br>
+    <ion-text class="genero info">Género:</ion-text>
+    <br>
+    <ion-text class="genre info">{{ movie.genre }}</ion-text>
+    <br>
+    <ion-text class="sinopse info">Sinopse:</ion-text>
+    <br>
+    <ion-text class="synopsis info">{{ movie.synopsis }}</ion-text>
+    <br>
+    <ion-text class="trailer info">Trailer:</ion-text>
+    <iframe width="560" height="315" [src]="movie.video" frameborder="0" allowfullscreen></iframe>
+    <iframe width="360" height="360" src="{{ movie.video }}" frameborder="0" allowfullscreen></iframe>
+    {{movie.video}}
   </ion-grid>
+  
 </ion-content>
