@@ -9,20 +9,13 @@
     <h1 class="login">Iniciar sessão</h1>
   </div>
   <br><br>
-
-  <ion-list>
-    <ion-item>
-      <ion-label position="stacked">Nome de usuário</ion-label>
-      <ion-input type="text" name="username" [(ngModel)]="inputlogin.username"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="stacked">Palavra-passe</ion-label>
-      <ion-input type="password" name="password" [(ngModel)]="inputlogin.password"></ion-input>
-    </ion-item>
-    <ion-item lines="none">
+      <ion-button class="button">
+      <ion-input type="text" name="username" placeholder="Nome de usuário" [(ngModel)]="inputlogin.username"></ion-input>
+    </ion-button>
+    <ion-button>
+      <ion-input type="password" name="password" placeholder="Palavra-passe"[(ngModel)]="inputlogin.password"></ion-input>
+    </ion-button>
+    <br>
       Não tens conta? <a routerLink="/signup"> Cria uma conta</a>
-    </ion-item>
-  </ion-list>
-
 <ion-button type="button" expand="block" shape="round" color="primary" (click)="Login()">Login</ion-button>
 </ion-content>

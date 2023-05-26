@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage-angular';
-
-
+import { AlertController } from '@ionic/angular';
 
 
 @Component({
@@ -17,12 +16,12 @@ export class SignupPage implements OnInit {
     username:'',
     password:''
   }
-  constructor(private storage: Storage) { }
+  constructor(private storage: Storage, private alert: AlertController) { }
 
   ngOnInit() {
   }
 
-  Register() {
+  async Register() {
     // Verificar se algum campo está vazio
     if (
       this.userdata.fullname === '' ||
@@ -30,7 +29,13 @@ export class SignupPage implements OnInit {
       this.userdata.username === '' ||
       this.userdata.password === ''
     ) {
-      console.log('Por favor, preencha todos os campos');
+      //console.log('Por favor, preencha todos os campos');
+      const alert = await this.alert.create({
+        header: 'Erro a criar conta',
+        message: 'Todos os campos devem ser preenchidos',
+        buttons: ['OK']
+      });
+      await alert.present();
       return;
     }
   
@@ -41,12 +46,41 @@ export class SignupPage implements OnInit {
       this.userdata.username.length < 2 ||
       this.userdata.password.length < 2
     ) {
-      console.log('Todos os campos devem ter pelo menos dois caracteres');
+      //console.log('Todos os campos devem ter pelo menos dois caracteres');
+      const alert = await this.alert.create({
+        header: 'Erro a criar conta',
+        message: 'Todos os campos devem ter pelo menos dois caracteres',
+        buttons: ['OK']
+      });
+      await alert.present();
       return;
     }
   
     if (!this.userdata.email.includes('@') || !this.userdata.email.includes('.')) {
-      console.log('O campo de e-mail deve conter "@" e "."');
+      //console.log('O campo de e-mail deve conter "@" e "."');
+      const alert = await this.alert.create({
+        header: 'Erro a criar conta',
+        message: 'O campo de e-mail deve conter "@" e "."',
+        buttons: ['OK']
+      });
+      await alert.present();
+      return;
+    }
+  
+    // Verificar as condições da senha
+    if (
+      this.userdata.password.length < 8 ||
+      !/\d/.test(this.userdata.password) || // Verificar se há pelo menos um número
+      !/[A-Z]/.test(this.userdata.password) || // Verificar se há pelo menos uma letra maiúscula
+      !/[!@#$%^&*]/.test(this.userdata.password) // Verificar se há pelo menos um caractere especial
+    ) {
+      //console.log('A senha deve ter pelo menos 8 caracteres, um número, uma letra maiúscula e um caractere especial (!@#$%^&*)');
+      const alert = await this.alert.create({
+        header: 'Erro a criar conta',
+        message: 'A senha deve ter pelo menos 8 caracteres, um número, uma letra maiúscula e um caractere especial (!@#$%^&*)',
+        buttons: ['OK']
+      });
+      await alert.present();
       return;
     }
   
@@ -68,7 +102,7 @@ export class SignupPage implements OnInit {
             } else {
               // Se `existingData` não for um array, crie um novo array com os dados existentes e adicione o novo dado
               if (existingData.username === this.userdata.username) {
-                console.log('Esse usuário já existe!');
+                //console.log('Esse usuário já existe!');
                 return;
               }
               return storage.set('userdata', [existingData, this.userdata]);

@@ -11,25 +11,20 @@
   <br><br>
 
   <form>
-    <ion-item>
-      <ion-label position="stacked">Nome completo</ion-label>
-      <ion-input type="text" name="fullname" [(ngModel)]="userdata.fullname"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="stacked">E-mail</ion-label>
-      <ion-input type="E-mail" name="email" [(ngModel)]="userdata.email"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="stacked">Nome de usuário</ion-label>
-      <ion-input type="text" name="username" [(ngModel)]="userdata.username"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="stacked">Palavra-passe</ion-label>
-      <ion-input type="password" name="password" [(ngModel)]="userdata.password"></ion-input>
-    </ion-item>
-    <ion-item lines="none">
+    <ion-button>
+      <ion-input type="text" name="fullname" [(ngModel)]="userdata.fullname" placeholder="Nome completo"></ion-input>
+    </ion-button> 
+    <ion-button> 
+      <ion-input type="E-mail" name="email" [(ngModel)]="userdata.email" placeholder="E-mail"></ion-input>
+    </ion-button> 
+    <ion-button>  
+      <ion-input type="text" name="username" [(ngModel)]="userdata.username" placeholder="Nome de usuário"></ion-input>
+    </ion-button>
+    <ion-button>
+      <ion-input type="password" name="password" [(ngModel)]="userdata.password" placeholder="Palavra-passe"></ion-input>
+    </ion-button>
+    <br>
       Já tens conta? <a routerLink="/login"> Inicia sessão</a>
-    </ion-item>
 <ion-button type="button" expand="block" shape="rounded" color="primary" (click)="Register()">Registar</ion-button>
 </form>
 

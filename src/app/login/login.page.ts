@@ -56,8 +56,8 @@ export class LoginPage implements OnInit {
       } else {
         //console.log('As credenciais introduzidas estão incorretas!');
         const alert = await this.alert.create({
-          header: 'erro no login',
-          message: 'As credenciais introduzidas estão incorretas!',
+          header: 'Erro a iniciar sessão',
+          message: 'As credenciais introduzidas estão incorretas',
           buttons: ['OK']
         });
         await alert.present();
@@ -65,7 +65,7 @@ export class LoginPage implements OnInit {
 
       }
     } else {
-      console.log('Nome de usuário ou palavra-passe inválidos!');
+      console.log('Nome de usuário ou palavra-passe inválidos');
     }
   }
 
