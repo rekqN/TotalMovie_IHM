@@ -22,12 +22,13 @@ const routes: Routes = [
   {
     path: 'filme/:id',
     loadChildren: () => import('./filme/filme.module').then( m => m.FilmePageModule)
-  },  {
+  },
+  {
     path: 'pesquisa',
     loadChildren: () => import('./pesquisa/pesquisa.module').then( m => m.PesquisaPageModule)
   },
   {
-    path: 'forum',
+    path: 'forum/:id',
     loadChildren: () => import('./forum/forum.module').then( m => m.ForumPageModule)
   },
 
