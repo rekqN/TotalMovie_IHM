@@ -1,29 +1,29 @@
 [
   {
-    "postId": 1,
+    "postId": "1",
     "postTitle": "Saga Harry Potter",
     "postCreator": "Spider-Man",
     "postContent": "\tQueria saber opiniões sobre a saga do Harry Potter. \n\tPela sinopse parece uma saga bastante boa, mas não me convenceu. Quem pudesse comentar o que achou, estaria agradecido.",
-    "postComments": 8,
-    "postViews": 29,
+    "postComments": "8",
+    "postViews": "29",
     "postDate": "13/05/2018"
   },
   {
-    "postId": 2,
+    "postId": "2",
     "postTitle": "Dwayne Johnson",
     "postCreator": "Dwayne Jhonson Himself",
     "postContent": "\tJust a Dwayne Johnson Post made by Dwayne Jhonson",
-    "postComments": 20,
-    "postViews": 259,
+    "postComments": "20",
+    "postViews": "259",
     "postDate": "25/07/2020"
   },
   {
-    "postId": 3,
+    "postId": "3",
     "postTitle": "Dwayne Johnson But Fake",
     "postCreator": "Fake Dwayne Jhonson",
     "postContent": "\tJust a Fake Dwayne Johnson Post made by Fake Dwayne Jhonson",
-    "postComments": 35,
-    "postViews": 319,
+    "postComments": "35",
+    "postViews": "319",
     "postDate": "13/08/2019"
   }
 ]

@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 interface Post {
-    postId: number,
+    postId: string,
     postTitle: string,
     postCreator: string,
     postContent: string,
-    postComments: number,
-    postViews: number,
+    postComments: string,
+    postViews: string,
     postDate: string
 }
 

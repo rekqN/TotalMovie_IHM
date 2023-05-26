@@ -23,6 +23,7 @@ interface Movie {
   templateUrl: './filme.page.html',
   styleUrls: ['./filme.page.scss'],
 })
+
 export class FilmePage implements OnInit {
   public valorRecebido: any;
   public movie: Movie | undefined;
