@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage-angular';
 import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,7 @@ export class LoginPage implements OnInit {
     password: ''
   };
   
-  constructor(private storage: Storage, private router: Router) { }
+  constructor(private storage: Storage, private router: Router, private alert: AlertController) { }
 
   async ionViewWillEnter() {
     await this.storage.create(); // Cria o banco de dados
@@ -38,7 +39,7 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
-  Login() {
+  async Login() {
     console.log('Dados guardados:', this.userdata);
     console.log('Dados introduzidos:', this.inputlogin);
     if (this.validateInput()) {
@@ -53,7 +54,15 @@ export class LoginPage implements OnInit {
             console.error('Erro ao armazenar o username:', error);
           });
       } else {
-        console.log('As credenciais introduzidas estão incorretas!');
+        //console.log('As credenciais introduzidas estão incorretas!');
+        const alert = await this.alert.create({
+          header: 'erro no login',
+          message: 'As credenciais introduzidas estão incorretas!',
+          buttons: ['OK']
+        });
+        await alert.present();
+        return;
+
       }
     } else {
       console.log('Nome de usuário ou palavra-passe inválidos!');

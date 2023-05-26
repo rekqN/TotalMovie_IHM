@@ -1,20 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
-interface Realizador {
-  name: {
-    first: string;
-    last: string;
-  };
-  location: {
-    country: string;
-  };
-  email: string;
-  picture: {
-    medium: string;
-  }
+interface Post {
+    postId: number,
+    postTitle: string,
+    postCreator: string,
+    postContent: string,
+    postComments: number,
+    postViews: number,
+    postDate: string
 }
-
 
 @Component({
   selector: 'app-tab5',
@@ -23,17 +18,19 @@ interface Realizador {
 })
 
 export class Tab5Page implements OnInit {
+  public posts: Post[] = [];
 
-  public realizadores: Realizador[];
+  constructor(private router: Router) {}
 
-  constructor(public http: HttpClient) {
-    this.realizadores = [];
+  ngOnInit() {
+    fetch('./assets/dados/forumPosts.json')
+      .then(res => res.json())
+      .then(json => {
+        this.posts = json;
+      });
   }
-
-  ngOnInit(): void {
-    this.http.get<any>('https://randomuser.me/api/?results=30').subscribe(data => {
-      this.realizadores = data.results;
-    })
+  redirecionarPost(post: Post) {
+    console.log("se estas a ler isto e pq esta a funcionar. parabens!");
+    this.router.navigate(['/forum', post.postId]);
   }
-
 }

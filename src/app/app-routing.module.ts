@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'pesquisa',
     loadChildren: () => import('./pesquisa/pesquisa.module').then( m => m.PesquisaPageModule)
   },
+  {
+    path: 'forum',
+    loadChildren: () => import('./forum/forum.module').then( m => m.ForumPageModule)
+  },
 
 
 

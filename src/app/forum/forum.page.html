@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-icon name="arrow-back-outline" class="back-icon"  routerLink="/tabs/tab5"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid *ngIf="post">
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>{{ post.postTitle }}</ion-card-title>
+            <ion-card-subtitle>{{ post.postCreator }} - {{post.postDate}}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>{{ post.postContent}}</ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12">
+        <ion-card *ngFor="let comment of comments" class="commentCards">
+          <ion-card-header>
+            <ion-card-title>A responder a: </ion-card-title>
+            <ion-card-subtitle>{{ comment.commentCreator }} - {{comment.commentDate}}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>{{ comment.commentContent}}</ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

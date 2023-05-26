@@ -1,6 +1,6 @@
 .toolbar {
     --background: #000000;
-    height: 120px;
+    height: 80px;
 }
 
 .search-icon {
@@ -26,15 +26,7 @@ input.barra_pesquisa {
     padding-left: 20px;
 }
 
-.back-icon {
-    position: relative;
-    left: -260px;
-    color: #91C6FC;
-    width: 24px;
-    height: 24px;
-}
-
-.createComment {
+.createPost {
     position: relative;
     --background: #b7f399;
     --background-activated: #87d361;
@@ -43,6 +35,14 @@ input.barra_pesquisa {
     left: 320px;
 }
 
+.postCards {
+    margin: 15px;
+}
+
+.ionContentColor {
+    background: #13222F;
+}
+
 header {
-    background-image: './assets/img/capaFilmesIonic.png';
+    background-image: url('/assets/img/capaFilmesIonic.png');
 }
