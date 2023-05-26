@@ -89,7 +89,7 @@ export class ForumPage implements OnInit {
   enviarComentario() {
     if (this.newComment.trim() !== '' && this.username.trim() !== '') {
       const novoComentario: Comment = {
-        commentId: generateUniqueId(), // Função para gerar um ID único
+        commentId: this.generateUniqueId(),
         commentedOnPostId: this.postId,
         commentCreator: this.username,
         commentContent: this.newComment,
@@ -106,19 +106,30 @@ export class ForumPage implements OnInit {
       console.log('Conteúdo:', novoComentario.commentContent);
       console.log('Data:', novoComentario.commentDate);
 
-      // Atualizar o armazenamento local com os novos comentários (se necessário)
+      this.updateCommentsStorage();
 
-      // Limpar os campos de entrada
       this.newComment = '';
+
     }
+  }
+
+  async updateCommentsStorage() {
+    try {
+      await this.storage.set('comments', this.comments);
+      console.log('Armazenamento local atualizado com os novos comentários.');
+    } catch (error) {
+      console.error('Erro ao atualizar o armazenamento local:', error);
+    }
+  }
+  
+
+  generateUniqueId(): string {
+    const timestamp = new Date().getTime();
+    const randomNum = Math.floor(Math.random() * 1000000);
+    return `${timestamp}-${randomNum}`;
   }
 }
 
-function generateUniqueId(): string {
-  const timestamp = new Date().getTime();
-  const randomNum = Math.floor(Math.random() * 1000000);
-  return `${timestamp}-${randomNum}`;
-}
 
 
 
