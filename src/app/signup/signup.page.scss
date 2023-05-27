@@ -1,3 +1,37 @@
 .signup{
     color: white;
 }
+
+.inputCostumization {
+    width: 240px;
+    height: 40px;
+    margin-bottom: 20px;
+    --background: white;
+    --border-radius: 67px;
+    --color: grey;
+    text-align: left;
+}
+
+.center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#registerButton {
+    width: 240px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.center ion-input{
+    --padding-start: 20px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+ }

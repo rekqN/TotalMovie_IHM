@@ -10,22 +10,16 @@
   </div>
   <br><br>
 
-  <form>
-    <ion-button>
-      <ion-input type="text" name="fullname" [(ngModel)]="userdata.fullname" placeholder="Nome completo"></ion-input>
-    </ion-button> 
-    <ion-button> 
-      <ion-input type="E-mail" name="email" [(ngModel)]="userdata.email" placeholder="E-mail"></ion-input>
-    </ion-button> 
-    <ion-button>  
-      <ion-input type="text" name="username" [(ngModel)]="userdata.username" placeholder="Nome de usuário"></ion-input>
-    </ion-button>
-    <ion-button>
-      <ion-input type="password" name="password" [(ngModel)]="userdata.password" placeholder="Palavra-passe"></ion-input>
-    </ion-button>
+  <form class="center">
+    <ion-input type="text" name="fullname" [(ngModel)]="userdata.fullname" placeholder="Nome completo" class="inputCostumization"></ion-input>
+    <ion-input type="E-mail" name="email" [(ngModel)]="userdata.email" placeholder="E-mail" class="inputCostumization"></ion-input>
+    <ion-input type="text" name="username" [(ngModel)]="userdata.username" placeholder="Nome de usuário" class="inputCostumization"></ion-input>
+    <ion-input type="password" name="password" [(ngModel)]="userdata.password" placeholder="Palavra-passe" class="inputCostumization"></ion-input>
+  </form>
+  <div class="link">
     <br>
-      Já tens conta? <a routerLink="/login"> Inicia sessão</a>
-<ion-button type="button" expand="block" shape="rounded" color="primary" (click)="Register()">Registar</ion-button>
-</form>
+    Já tens conta? <a routerLink="/login"> Inicia sessão</a>
+  </div>
+  <ion-button type="button" expand="block" shape="round" color="primary" (click)="Register()" class="center" id="registerButton">Registar</ion-button>
 
 </ion-content>

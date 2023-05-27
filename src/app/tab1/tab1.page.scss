@@ -8,85 +8,89 @@
     position: relative;
     right: 140px;
     
-  }
+}
 
-  .total-movies {
-    font-size: 16px; 
-    position: relative;
-    top: -15px;
-    left: 5px;
-    color: #91C6FC;
-    white-space: nowrap;
-  }
+.total-movies {
+  font-size: 16px; 
+  position: relative;
+  top: -15px;
+  left: 5px;
+  color: #91C6FC;
+  white-space: nowrap;
+ }
 
-  .toolbar {
-    --background: #000000 ;
-    height: 120px;
-  }
+.toolbar {
+  --background: #000000 ;
+  height: 120px;
+}
 
-  .search-icon{
-    margin-top: -30px;
-    position: relative;
-    left: 10px;
-    color: #91C6FC;
-  }
+.search-icon{
+  margin-top: -30px;
+  position: relative;
+  left: 10px;
+  color: #91C6FC;
+}
 
-  .other-icons{
-    margin-top: -30px;
-    position: relative;
-    left: 200px;
-    color: #91C6FC;
-    margin-right: 5px;
+.other-icons{
+  margin-top: -30px;
+  position: relative;
+  left: 200px;
+  color: #91C6FC;
+  margin-right: 5px;
+}
 
-  }
+.genre{
+  font-size: 16px;
+  color: white;
+  position: relative;
+  left: 20px;
+}
 
-  .genre{
-    font-size: 16px;
-    color: white;
-    position: relative;
-    left: 20px;
-  }
-
-  .image-container {
-    display: flex;
-  }
+.image-container {
+  display: flex;
+}
   
-  .capa{
-    width: 90px;
-    height: 120px;
-    margin-right: 10px;
-    border-radius: 5px;
-    position: relative;
-    top: 10px;
-    left: 20px;
-  }
+.capa{
+  width: 90px;
+  height: 120px;
+  margin-right: 10px;
+  border-radius: 5px;
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
 
-  .container_scroll{
-    flex-wrap: nowrap;
-    overflow-x: scroll!important;
-    overflow-y: hidden;
-    width: 100%;
-    }
+.container_scroll{
+  flex-wrap: nowrap;
+  overflow-x: scroll!important;
+  overflow-y: hidden;
+  width: 100%;
+}
 
-    .username{
-      color: azure;
-      position: relative;
-      left: 50px;
-      font-size: 22px;
-      top: 20px;
-    }
+.username{
+  color: azure;
+  position: relative;
+  left: 50px;
+  font-size: 22px;
+  top: 20px;
+}
 
-    .scroll-wrapper {
-      width: 100%;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
+.scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
 
-    .container_scroll {
-      overflow-x: auto;
-      white-space: nowrap;
-    }
+.container_scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+}
     
-    .clear-row {
-      clear: both;
-    }
+.clear-row {
+  clear: both;
+}
+
+#logOutButton {
+  width: 96px;
+  height: 16px;
+}
