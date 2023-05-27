@@ -15,3 +15,13 @@
 .trash{
     color: red;
 }
+
+.roundHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 217px;
+    border-radius: 67px;
+    background-color: #91C6FC;
+    padding: 20px;
+}
