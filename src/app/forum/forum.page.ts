@@ -58,6 +58,19 @@ export class ForumPage implements OnInit {
       .catch((error) => {
         console.error('Erro ao recuperar o username:', error);
       });
+
+    this.storage.get('comments')
+      .then((comments) => {
+        if (comments) {
+          this.comments = comments;
+          console.log('Comentários recuperados:', this.comments);
+        } else {
+          console.log('Nenhum comentário encontrado');
+        }
+      })
+      .catch((error) => {
+        console.error('Erro ao recuperar os comentários:', error);
+      });
   }
 
   ngOnInit() {
@@ -73,12 +86,6 @@ export class ForumPage implements OnInit {
       .then(json => {
         this.posts = json;
         this.post = this.posts.find(post => post.postId === this.postId);
-      });
-
-    fetch('./assets/dados/forumComments.json')
-      .then(res => res.json())
-      .then(json => {
-        this.comments = json;
       });
   }
 
@@ -109,26 +116,23 @@ export class ForumPage implements OnInit {
       this.updateCommentsStorage();
 
       this.newComment = '';
-
     }
   }
-
-  async updateCommentsStorage() {
-    try {
-      await this.storage.set('comments', this.comments);
-      console.log('Armazenamento local atualizado com os novos comentários.');
-    } catch (error) {
-      console.error('Erro ao atualizar o armazenamento local:', error);
+    async updateCommentsStorage() {
+      try {
+        await this.storage.set('comments', this.comments);
+        console.log('Armazenamento local atualizado com os novos comentários.');
+      } catch (error) {
+        console.error('Erro ao atualizar o armazenamento local:', error);
+      }
     }
-  }
   
-
-  generateUniqueId(): string {
-    const timestamp = new Date().getTime();
-    const randomNum = Math.floor(Math.random() * 1000000);
-    return `${timestamp}-${randomNum}`;
+    generateUniqueId(): string {
+      const timestamp = new Date().getTime();
+      const randomNum = Math.floor(Math.random() * 1000000);
+      return `${timestamp}-${randomNum}`;
+    }
   }
-}
 
 
 
