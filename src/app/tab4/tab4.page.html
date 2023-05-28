@@ -19,17 +19,21 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-text class="vermaistarde">Ver mais tarde</ion-text>
-  <ion-list>
-    <ion-item *ngFor="let filme of filmesVerMaisTarde">
-      <ion-thumbnail slot="start">
-        <img [src]="filme.imagem" alt="Capa do Filme">
-      </ion-thumbnail>
-      <ion-label>
-        <h2>{{ filme.tituloYear }}</h2>
-        <p>{{ filme.username }}</p>
-      </ion-label>
-      <ion-icon name="trash-outline" class="trash" (click)="removerFilme(filme)"></ion-icon>
-    </ion-item>
-  </ion-list>
+  <div class="verMaisTardeTitulo">
+    <ion-text>Ver mais tarde</ion-text>
+  </div>
+  <div class="listaVerMaisTarde">
+    <ion-list>
+      <ion-item *ngFor="let filme of filmesVerMaisTarde">
+        <ion-thumbnail slot="start">
+          <img [src]="filme.imagem" alt="Capa do Filme">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{ filme.tituloYear }}</h2>
+          <p>{{ filme.username }}</p>
+        </ion-label>
+        <ion-icon name="trash-outline" class="trash" (click)="removerFilme(filme)"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>

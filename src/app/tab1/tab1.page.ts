@@ -56,8 +56,8 @@ export class Tab1Page implements OnInit {
 
   async confirmLogout() {
     const alert = await this.alertController.create({
-      header: 'Confirmar Logout',
-      message: 'Tem certeza que deseja encerrar a sessão?',
+      header: 'Sair da conta',
+      message: 'Tem a certeza que deseja encerrar a sessão?',
       buttons: [
         {
           text: 'Cancelar',

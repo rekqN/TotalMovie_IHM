@@ -22,14 +22,13 @@
     <ion-text class="duracao">Duração:</ion-text>
     <ion-text class="duration info">{{ movie.duration }}</ion-text>
     <br>
+    <ion-text class="genero info">Género:</ion-text>
+    <ion-text class="genre info">{{ movie.genre }}</ion-text>
+    <br>
     <ion-text class="transmissao info">Disponível em:</ion-text>
     <img [src]="movie.channel" class="channel info">
     <br>
     <ion-button class="botao info" (click)="adicionarVerMaisTarde()">+ Ver mais tarde</ion-button>
-    <br>
-    <ion-text class="genero info">Género:</ion-text>
-    <br>
-    <ion-text class="genre info">{{ movie.genre }}</ion-text>
     <br>
     <ion-text class="sinopse info">Sinopse</ion-text>
     <br>
