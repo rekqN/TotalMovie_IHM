@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ScreenOrientation, OrientationLockOptions } from '@capacitor/screen-orientation';
 
 interface Post {
     postId: string,
@@ -28,6 +29,10 @@ export class Tab5Page implements OnInit {
       .then(json => {
         this.posts = json;
       });
+      if (ScreenOrientation.lock) {
+        const lockOptions: OrientationLockOptions = { orientation: 'portrait' };
+        ScreenOrientation.lock(lockOptions);
+      }  
   }
   redirecionarPost(post: Post) {
     console.log("se estas a ler isto e pq esta a funcionar. parabens!");

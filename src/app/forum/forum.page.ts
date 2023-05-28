@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
+import { ScreenOrientation, OrientationLockOptions } from '@capacitor/screen-orientation';
 
 interface Post {
   postId: string;
@@ -78,6 +79,11 @@ export class ForumPage implements OnInit {
       this.postId = params.get('id') ?? '';
       this.fetchData();
     });
+
+    if (ScreenOrientation.lock) {
+      const lockOptions: OrientationLockOptions = { orientation: 'portrait' };
+      ScreenOrientation.lock(lockOptions);
+    }
   }
 
   fetchData() {

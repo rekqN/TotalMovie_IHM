@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
 import { AlertController } from '@ionic/angular';
 import { DataService } from '../services/listas.service';
+import { ScreenOrientation, OrientationLockOptions } from '@capacitor/screen-orientation';
 
 interface Movie {
   id: string;
@@ -60,7 +61,12 @@ export class FilmePage implements OnInit {
         this.dataMovies = json;
         this.movie = this.dataMovies.find((movie) => movie.id === this.valorRecebido);
       });
+      if (ScreenOrientation.lock) {
+        const lockOptions: OrientationLockOptions = { orientation: 'portrait' };
+        ScreenOrientation.lock(lockOptions);
+      }
   }
+
 
   voltar() {
     history.back();

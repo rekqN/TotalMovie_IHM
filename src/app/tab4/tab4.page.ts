@@ -1,16 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService, Movie } from '../services/listas.service';
 import { Storage } from '@ionic/storage-angular';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
+import { ScreenOrientation, OrientationLockOptions } from '@capacitor/screen-orientation';
 
 @Component({
   selector: 'app-tab4',
   templateUrl: './tab4.page.html',
   styleUrls: ['./tab4.page.scss'],
 })
-export class Tab4Page {
+export class Tab4Page implements OnInit{
   public filmesVerMaisTarde: Movie[] = [];
   public username: string = '';
 
@@ -21,6 +22,13 @@ export class Tab4Page {
     private router: Router,
     private navCtrl: NavController
   ) {}
+
+  async ngOnInit() {
+    if (ScreenOrientation.lock) {
+      const lockOptions: OrientationLockOptions = { orientation: 'portrait' };
+      ScreenOrientation.lock(lockOptions);
+    }
+  }
 
   async ionViewWillEnter() {
     this.storage

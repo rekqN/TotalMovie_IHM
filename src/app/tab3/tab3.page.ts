@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
+import { ScreenOrientation, OrientationLockOptions } from '@capacitor/screen-orientation';
 
 interface Movie {
 id: string;
@@ -34,6 +35,10 @@ fetch('./assets/dados/movies.json')
 this.dataMovies = json;
 this.shuffleMovies();
 });
+if (ScreenOrientation.lock) {
+    const lockOptions: OrientationLockOptions = { orientation: 'portrait' };
+    ScreenOrientation.lock(lockOptions);
+  }
 }
 
 

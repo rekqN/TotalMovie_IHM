@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage-angular';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { ScreenOrientation, OrientationLockOptions } from '@capacitor/screen-orientation';
 
 @Component({
   selector: 'app-login',
@@ -37,6 +38,10 @@ export class LoginPage implements OnInit {
   }
   
   ngOnInit() {
+    if (ScreenOrientation.lock) {
+      const lockOptions: OrientationLockOptions = { orientation: 'portrait' };
+      ScreenOrientation.lock(lockOptions);
+    }
   }
 
   async Login() {
