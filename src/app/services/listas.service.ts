@@ -91,4 +91,11 @@ export class DataService {
     }
   }
   
+  async verificarFilmeExistente(movieId: string, username: string): Promise<boolean> {
+    if (!this.storageInstance) {
+      await this.initStorage();
+    }
+    const filmeExistente = this.verMaisTardeList.some(filme => filme.movieId === movieId && filme.username === username);
+    return filmeExistente;
+  }
 }

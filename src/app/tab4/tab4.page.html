@@ -1,7 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-text class="total-movies">
+      Total Movies
+    </ion-text>
+    <ion-buttons slot="end">
+      <ion-icon name="search-outline" class="search_pages" routerLink="/pesquisa"></ion-icon>
+      <ion-icon name="person-outline" class="other-icons"></ion-icon>
+      <ion-icon name="notifications-outline" class="other-icons"></ion-icon>
+      <ion-icon name="settings-outline" class="other-icons"></ion-icon>
+      <img src="assets/img/tudo.jpg/" class="small-image">
+      <img src="assets/img/netflix.png" class="small-image">
+      <img src="assets/img/hbo.png" class="small-image">
+      <img src="assets/img/disney+.png" class="small-image">
+      <img src="assets/img/primevideo.png" class="small-image">
+      <img src="assets/img/plus.png" class="small-image">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content [fullscreen]="true">
-  <ion-header class="roundHeader">
-    <ion-title>Ver Mais Tarde</ion-title>
-  </ion-header>
+  <ion-text class="vermaistarde">Ver mais tarde</ion-text>
   <ion-list>
     <ion-item *ngFor="let filme of filmesVerMaisTarde">
       <ion-thumbnail slot="start">

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { Storage } from '@ionic/storage-angular';
 
 interface Movie {
 id: string;
@@ -23,7 +25,7 @@ styleUrls: ['tab3.page.scss']
 export class Tab3Page implements OnInit {
 public dataMovies: Movie[] = [];
 
-constructor(private router: Router, private route: ActivatedRoute) {}
+constructor(private alertController: AlertController, private router: Router, private route: ActivatedRoute) {}
 
 ngOnInit() {
 fetch('./assets/dados/movies.json')
@@ -33,6 +35,7 @@ this.dataMovies = json;
 this.shuffleMovies();
 });
 }
+
 
 shuffleMovies() {
 for (let i = this.dataMovies.length - 1; i > 0; i--) {
@@ -45,4 +48,7 @@ redirecionarFilme(movie: Movie) {
 // Redirecionar para a página 'filme' com o ID do filme como parâmetro na URL
 this.router.navigate(['/filme', movie.id]);
 }
+
+
+
 }
