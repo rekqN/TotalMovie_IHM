@@ -9,23 +9,28 @@
 
 .comment{
     margin-top: 30px;
-    position: relative;
-    right: -344px;
+    position: fixed;
+    left: 310px;
     color: black;
     width: 24px;
     height: 24px;
+    top: 757px;
+    z-index: 1;
 }
 
 .barra_comentario {
-    position: relative;
-    left: 5px;
+    position: fixed;
+    left: 40px;
     width: 300px;
+    background-color: #6E96BE;
+    max-width: 100%;
     height: 40px;
     border-radius: 20px;
-    top: -10px;
+    top: 780px;
     font-size: 12px;
 }
 
 input.barra_comentario {
     padding-left: 20px;
+    padding-right: 40px;
   }

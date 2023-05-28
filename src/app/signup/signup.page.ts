@@ -56,11 +56,10 @@ export class SignupPage implements OnInit {
       return;
     }
   
-    if (!this.userdata.email.includes('@') || !this.userdata.email.includes('.')) {
-      //console.log('O campo de e-mail deve conter "@" e "."');
+    if (!this.userdata.email.includes('@') || !/\.[A-Za-z]+$/.test(this.userdata.email)) {
       const alert = await this.alert.create({
-        header: 'Erro a criar conta',
-        message: 'O campo de e-mail deve conter "@" e "."',
+        header: 'Erro ao criar conta',
+        message: 'O campo de e-mail deve conter "@" e um TLD válido',
         buttons: ['OK']
       });
       await alert.present();
@@ -86,7 +85,7 @@ export class SignupPage implements OnInit {
   
     this.storage.create().then((storage) => {
       storage.get('userdata')
-        .then((existingData) => {
+        .then(async (existingData) => {
           if (existingData) {
             if (Array.isArray(existingData)) {
               // Verifique se o usuário já existe no array existente
@@ -97,6 +96,12 @@ export class SignupPage implements OnInit {
                 return storage.set('userdata', existingData);
               } else {
                 console.log('Esse usuário já existe!');
+                const alert = await this.alert.create({
+                  header: 'Erro a criar conta',
+                  message: 'Esse nome de usuário já existe',
+                  buttons: ['OK']
+                });
+                await alert.present();
                 return;
               }
             } else {
@@ -111,9 +116,15 @@ export class SignupPage implements OnInit {
             return storage.set('userdata', [this.userdata]);
           }
         })
-        .then(() => {
-          console.log('Dados salvos com sucesso!');
+        .then(async () => {
           console.log(this.userdata);
+          
+          const alert = await this.alert.create({
+            header: 'Registo bem-sucedido',
+            message: 'A conta foi criada com sucesso',
+            buttons: ['OK']
+          });
+          await alert.present();
         })
         .catch((error) => {
           console.error('Erro ao salvar os dados:', error);
