@@ -1,8 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <app-logo class="logo"></app-logo>
+    <ion-buttons slot="end">
+      <ion-icon name="search-outline" class="search_pages" routerLink="/pesquisa"></ion-icon>
+      <ion-icon name="person-outline" class="other-icons"></ion-icon>
+      <ion-icon name="notifications-outline" class="other-icons"></ion-icon>
+      <ion-icon name="settings-outline" class="other-icons"></ion-icon>
+      <img src="assets/img/tudo.jpg/" class="small-image">
+      <img src="assets/img/netflix.png" class="small-image">
+      <img src="assets/img/hbo.png" class="small-image">
+      <img src="assets/img/disney+.png" class="small-image">
+      <img src="assets/img/primevideo.png" class="small-image">
+      <img src="assets/img/plus.png" class="small-image">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <div class="verMaisTardeTituloContainer">
+    <div class="verMaisTardeTitulo">
+      <ion-text id="titulo">Ver Mais Tarde</ion-text>
+    </div>
+  </div>
+</ion-header>
+
 <ion-content [fullscreen]="true">
   <ion-list>
-    <ion-item *ngFor="let filme of filmesVerMaisTarde">
+    <ion-item *ngFor="let filme of filmesVerMaisTarde" class="verMaisTardeLista">
       <ion-thumbnail slot="start">
-        <img [src]="filme.imagem" alt="Capa do Filme">
+        <img [src]="filme.imagem" alt="Capa do Filme" (click)="redirecionarFilme(filme)">
       </ion-thumbnail>
       <ion-label>
         <h2>{{ filme.tituloYear }}</h2>

@@ -9,11 +9,15 @@
     <h1 class="login">Iniciar sessão</h1>
   </div>
   <br><br>
-  <ion-input type="text" name="username" placeholder="Nome de usuário" [(ngModel)]="inputlogin.username"
-    class="inputCostumization"></ion-input>
-  <ion-input type="password" name="password" placeholder="Palavra-passe" [(ngModel)]="inputlogin.password"
-    class="inputCostumization"></ion-input>
-  <br>
-  Não tens conta? <a routerLink="/signup"> Cria uma conta</a>
-  <ion-button type="button" expand="block" shape="round" color="primary" (click)="Login()">Login</ion-button>
+  <div class="center">
+    <ion-input type="text" name="username" placeholder="Nome de usuário" [(ngModel)]="inputlogin.username" class="inputCostumization"></ion-input>
+    <ion-input type="password" name="password" placeholder="Palavra-passe" [(ngModel)]="inputlogin.password" class="inputCostumization"></ion-input>
+  </div>
+
+  <div class="link">  
+
+    Não tens conta? <a routerLink="/signup" class="sign"> Cria uma conta</a>
+    <br>
+  </div>
+  <ion-button type="button" expand="block" shape="round" color="primary" (click)="Login()" class="center" id="loginButton">Login</ion-button>
 </ion-content>

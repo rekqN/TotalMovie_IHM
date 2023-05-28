@@ -1,4 +1,8 @@
-.capa{
+.toolbar {
+    background-color: black;
+}
+
+.capa {
     width: 120px;
     height: 160px;
     margin-top: 0px;
@@ -7,11 +11,45 @@
     margin-left: 10px;
 }
 
-.titulo{
+.titulo {
     color: black;
     font-size: 20px;
 }
 
-.trash{
+.trash {
     color: red;
+}
+
+.roundHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 217px;
+    border-radius: 67px;
+    background-color: #91C6FC;
+    padding: 20px;
+}
+
+
+.verMaisTardeTituloContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.verMaisTardeTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 67px;
+    background-color: #91C6FC;
+    width: 224px;
+    height: 34px;
+    font-size: 20px;
+}
+
+.verMaisTardeLista {
+    border-radius: 67px;
+    margin-bottom: 10px;
 }

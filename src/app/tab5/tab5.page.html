@@ -1,9 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar class="toolbar"> 
-    <ion-icon name="search-outline" class="search-icon"></ion-icon>
-      <input type="text" placeholder="Busca por filmes, séries..." class ="barra_pesquisa">
+<ion-header>
+  <ion-toolbar class="toolbar" color="primary">
+    <app-logo class="logo"></app-logo>
+    <ion-buttons slot="end">
+      <ion-icon name="search-outline" class="search_pages" routerLink="/pesquisa"></ion-icon>
+      <ion-icon name="person-outline" class="other-icons"></ion-icon>
+      <ion-icon name="notifications-outline" class="other-icons"></ion-icon>
+      <ion-icon name="settings-outline" class="other-icons"></ion-icon>
+      <img src="assets/img/tudo.jpg/" class="small-image">
+      <img src="assets/img/netflix.png" class="small-image">
+      <img src="assets/img/hbo.png" class="small-image">
+      <img src="assets/img/disney+.png" class="small-image">
+      <img src="assets/img/primevideo.png" class="small-image">
+      <img src="assets/img/plus.png" class="small-image">
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-fab>
   <ion-fab-button class="createPost">
@@ -11,11 +23,13 @@
   </ion-fab-button>
 </ion-fab>
 
-<ion-content class = "ionContentColor">
+<ion-content class="ionContentColor">
+  <ion-icon name="search-outline" class="search"></ion-icon>
+  <input type="text" placeholder="Busca por filmes, séries..." class="barra_pesquisa">
   <ion-grid>
     <ion-row>
       <ion-col size="12">
-        <ion-card *ngFor="let post of posts"  (click)="redirecionarPost(post)" class="postCards">
+        <ion-card *ngFor="let post of posts" (click)="redirecionarPost(post)" class="postCards">
           <ion-card-header>
             <ion-card-title>{{ post.postTitle }}</ion-card-title>
             <ion-card-subtitle>{{ post.postCreator }} - {{post.postDate}}</ion-card-subtitle>

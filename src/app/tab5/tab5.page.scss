@@ -1,12 +1,8 @@
-.toolbar {
-    --background: #000000;
-    height: 80px;
-}
 
-.search-icon {
+.search {
     margin-top: 30px;
     position: relative;
-    right: -344px;
+    right: -324px;
     color: #91C6FC;
     width: 24px;
     height: 24px;
@@ -14,7 +10,7 @@
 
 .barra_pesquisa {
     position: relative;
-    left: 45px;
+    left: 25px;
     width: 260px;
     height: 40px;
     border-radius: 20px;
@@ -39,9 +35,6 @@ input.barra_pesquisa {
     margin: 15px;
 }
 
-.ionContentColor {
-    background: #13222F;
-}
 
 header {
     background-image: url('/assets/img/capaFilmesIonic.png');

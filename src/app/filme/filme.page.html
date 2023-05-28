@@ -1,15 +1,12 @@
-<ion-header [translucent]="true">
-  <ion-toolbar class="toolbar"> 
-    <ion-icon name="arrow-back-outline" class="back-icon" routerLink="/tabs/tab1"></ion-icon>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
+  <ion-icon name="arrow-back-outline" class="back-icon" (click) ="voltar()"></ion-icon>
   <ion-grid class="ion-margin" *ngIf="movie">
     <ion-row>
       <ion-col size="12">
         <ion-card button="true">
-          <img [src]="movie.big_img">
+          <img [src]="movie.big_img" >
         </ion-card>
       </ion-col>
     </ion-row>
@@ -25,16 +22,15 @@
     <ion-text class="duracao">Duração:</ion-text>
     <ion-text class="duration info">{{ movie.duration }}</ion-text>
     <br>
+    <ion-text class="genero info">Género:</ion-text>
+    <ion-text class="genre info">{{ movie.genre }}</ion-text>
+    <br>
     <ion-text class="transmissao info">Disponível em:</ion-text>
     <img [src]="movie.channel" class="channel info">
     <br>
     <ion-button class="botao info" (click)="adicionarVerMaisTarde()">+ Ver mais tarde</ion-button>
     <br>
-    <ion-text class="genero info">Género:</ion-text>
-    <br>
-    <ion-text class="genre info">{{ movie.genre }}</ion-text>
-    <br>
-    <ion-text class="sinopse info">Sinopse:</ion-text>
+    <ion-text class="sinopse info">Sinopse</ion-text>
     <br>
     <ion-text class="synopsis info">{{ movie.synopsis }}</ion-text>
     <br>

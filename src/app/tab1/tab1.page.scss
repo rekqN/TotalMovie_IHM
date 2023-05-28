@@ -1,92 +1,71 @@
-.small-image {
-    width: 25px;
-    height: 25px;
-    object-fit: cover;
-    margin-right: 10px;
-    border-radius: 5px;
-    margin-top: 45px;
-    position: relative;
-    right: 140px;
-    
-  }
+.search-icon {
+  margin-top: -30px;
+  position: relative;
+  left: 10px;
+  color: #91C6FC;
+}
 
-  .total-movies {
-    font-size: 16px; 
-    position: relative;
-    top: -15px;
-    left: 5px;
-    color: #91C6FC;
-    white-space: nowrap;
-  }
+.exit {
+  margin-top: -30px;
+  position: relative;
+  left: 212px;
+  margin-right: 5px;
+  height: 20px;
+  width: 20px;
+}
 
-  .toolbar {
-    --background: #000000 ;
-    height: 120px;
-  }
+.genre {
+  font-size: 16px;
+  color: white;
+  position: relative;
+  left: 20px;
+  margin-bottom: 10px; /* Adiciona espaçamento inferior */
+}
 
-  .search-icon{
-    margin-top: -30px;
-    position: relative;
-    left: 10px;
-    color: #91C6FC;
-  }
+.capa {
+  width: 90px;
+  height: 120px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
 
-  .other-icons{
-    margin-top: -30px;
-    position: relative;
-    left: 200px;
-    color: #91C6FC;
-    margin-right: 5px;
+.username {
+  color: white;
+  position: relative;
+  left: 50px;
+  font-size: 22px;
+  top: 20px;
+}
 
-  }
+.clear-row {
+  clear: both;
+}
 
-  .genre{
-    font-size: 16px;
-    color: white;
-    position: relative;
-    left: 20px;
-  }
+.icons {
+  margin-top: -30px;
+  position: relative;
+  left: 210px;
+  color: #91C6FC;
+  margin-right: 5px;
+}
 
-  .image-container {
-    display: flex;
-  }
-  
-  .capa{
-    width: 90px;
-    height: 120px;
-    margin-right: 10px;
-    border-radius: 5px;
-    position: relative;
-    top: 10px;
-    left: 20px;
-  }
+.scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
 
-  .container_scroll{
-    flex-wrap: nowrap;
-    overflow-x: scroll!important;
-    overflow-y: hidden;
-    width: 100%;
-    }
+.scroll-row {
+  display: flex;
+  flex-wrap: wrap; /* Alterado para wrap */
+  align-items: flex-start; /* Ajusta alinhamento vertical */
+}
 
-    .username{
-      color: azure;
-      position: relative;
-      left: 50px;
-      font-size: 22px;
-      top: 20px;
-    }
+.movie-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px; /* Adiciona espaçamento superior */
+}
 
-    .scroll-wrapper {
-      width: 100%;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
 
-    .container_scroll {
-      overflow-x: auto;
-      white-space: nowrap;
-    }
-    
-    .clear-row {
-      clear: both;
-    }

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { DataService, Movie } from '../services/listas.service';
 import { Storage } from '@ionic/storage-angular';
 import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab4',
@@ -15,7 +17,9 @@ export class Tab4Page {
   constructor(
     private dataService: DataService,
     private storage: Storage,
-    private alertController: AlertController
+    private alertController: AlertController,
+    private router: Router,
+    private navCtrl: NavController
   ) {}
 
   async ionViewWillEnter() {
@@ -47,7 +51,7 @@ export class Tab4Page {
   async removerFilme(filme: Movie) {
     const alert = await this.alertController.create({
       header: 'Confirmação',
-      message: `Deseja remover o filme da lista?`,
+      message: `Deseja remover o filme/série da lista?`,
       buttons: [
         {
           text: 'Cancelar',
@@ -83,6 +87,11 @@ export class Tab4Page {
       console.error('Erro ao adicionar o filme:', error);
     }
   }
+
+  redirecionarFilme(filme: Movie) {
+    // Redirecionar para a página 'filme' com o ID do filme como parâmetro na URL
+    this.router.navigate(['/filme', filme.movieId]);
+    }
 }
 
 
