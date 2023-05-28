@@ -1,11 +1,11 @@
- .search-icon{
+.search-icon {
   margin-top: -30px;
   position: relative;
-  left: 35px;
+  left: 10px;
   color: #91C6FC;
 }
 
-.exit{
+.exit {
   margin-top: -30px;
   position: relative;
   left: 212px;
@@ -14,35 +14,22 @@
   width: 20px;
 }
 
-.genre{
+.genre {
   font-size: 16px;
   color: white;
   position: relative;
   left: 20px;
+  margin-bottom: 10px; /* Adiciona espaçamento inferior */
 }
 
-.image-container {
-  display: flex;
-}
-  
-.capa{
+.capa {
   width: 90px;
   height: 120px;
   margin-right: 10px;
   border-radius: 5px;
-  position: relative;
-  top: 10px;
-  left: 20px;
 }
 
-.container_scroll{
-  flex-wrap: nowrap;
-  overflow-x: scroll!important;
-  overflow-y: hidden;
-  width: 100%;
-}
-
-.username{
+.username {
   color: white;
   position: relative;
   left: 50px;
@@ -50,23 +37,35 @@
   top: 20px;
 }
 
-.scroll-wrapper {
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.container_scroll {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-    
 .clear-row {
   clear: both;
 }
 
-#logOutButton {
-  width: 96px;
-  height: 16px;
+.icons {
+  margin-top: -30px;
+  position: relative;
+  left: 210px;
+  color: #91C6FC;
+  margin-right: 5px;
 }
+
+.scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.scroll-row {
+  display: flex;
+  flex-wrap: wrap; /* Alterado para wrap */
+  align-items: flex-start; /* Ajusta alinhamento vertical */
+}
+
+.movie-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px; /* Adiciona espaçamento superior */
+}
+
 

@@ -16,6 +16,11 @@ interface Movie {
   video: string;
 }
 
+interface GenreGroup {
+  genre: string;
+  movies: Movie[];
+}
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -24,6 +29,7 @@ interface Movie {
 export class Tab1Page implements OnInit {
   public dataMovies: Movie[] = [];
   public username: string = '';
+  public groupedMovies: GenreGroup[] = [];
 
   constructor(
     private alertController: AlertController,
@@ -51,7 +57,21 @@ export class Tab1Page implements OnInit {
       .then((res) => res.json())
       .then((json) => {
         this.dataMovies = json;
+        this.groupMoviesByGenre();
       });
+  }
+
+  groupMoviesByGenre() {
+    const groupedMovies: GenreGroup[] = [];
+    this.dataMovies.forEach((movie) => {
+      const existingGroup = groupedMovies.find((group) => group.genre === movie.genre);
+      if (existingGroup) {
+        existingGroup.movies.push(movie);
+      } else {
+        groupedMovies.push({ genre: movie.genre, movies: [movie] });
+      }
+    });
+    this.groupedMovies = groupedMovies;
   }
 
   async confirmLogout() {
@@ -94,4 +114,5 @@ export class Tab1Page implements OnInit {
     // Redirecionar para a página 'filme' com o ID do filme como parâmetro na URL
     this.router.navigate(['/filme', movie.id]);
   }
+  
 }

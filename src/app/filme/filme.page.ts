@@ -28,6 +28,7 @@ export class FilmePage implements OnInit {
   public movie: Movie | undefined;
   public dataMovies: Movie[] = [];
   public username: string = '';
+  public linkAnterior: string = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -59,6 +60,10 @@ export class FilmePage implements OnInit {
         this.dataMovies = json;
         this.movie = this.dataMovies.find((movie) => movie.id === this.valorRecebido);
       });
+  }
+
+  voltar() {
+    history.back();
   }
 
   async adicionarVerMaisTarde() {

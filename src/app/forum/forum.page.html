@@ -1,6 +1,4 @@
-
-
-<ion-content>
+<ion-content [fullscreen]="true">
   <ion-icon name="arrow-back-outline" class="back-icon" routerLink="/tabs/tab5"></ion-icon>
   <ion-grid *ngIf="post">
     <ion-row>
@@ -24,8 +22,6 @@
     </ion-row>
     <ion-icon name="send-outline" class="comment" (click)="enviarComentario()"></ion-icon>
     <input type="text" [(ngModel)]="newComment" placeholder="Comentar" class="barra_comentario">
-  <br><br><br>
+    <br><br><br>
   </ion-grid>
 </ion-content>
-
-

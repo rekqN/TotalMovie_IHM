@@ -1,3 +1,7 @@
+.toolbar {
+    background-color: black;
+}
+
 .capa {
     width: 120px;
     height: 160px;
@@ -26,20 +30,26 @@
     padding: 20px;
 }
 
-.total-movies {
-    font-size: 16px;
-    position: relative;
-    top: -15px;
-    left: 5px;
-    color: #91C6FC;
-    white-space: nowrap;
+
+.verMaisTardeTituloContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
 
 .verMaisTardeTitulo {
-    color: white;
-    position: relative;
-    left: 50px;
-    font-size: 22px;
-    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 67px;
+    background-color: #91C6FC;
+    width: 224px;
+    height: 34px;
+    font-size: 20px;
+}
+
+.verMaisTardeLista {
+    border-radius: 67px;
     margin-bottom: 10px;
 }

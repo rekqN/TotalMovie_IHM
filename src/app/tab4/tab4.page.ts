@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { DataService, Movie } from '../services/listas.service';
 import { Storage } from '@ionic/storage-angular';
 import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -17,6 +18,7 @@ export class Tab4Page {
     private dataService: DataService,
     private storage: Storage,
     private alertController: AlertController,
+    private router: Router,
     private navCtrl: NavController
   ) {}
 
@@ -85,6 +87,11 @@ export class Tab4Page {
       console.error('Erro ao adicionar o filme:', error);
     }
   }
+
+  redirecionarFilme(filme: Movie) {
+    // Redirecionar para a página 'filme' com o ID do filme como parâmetro na URL
+    this.router.navigate(['/filme', filme.movieId]);
+    }
 }
 
 
