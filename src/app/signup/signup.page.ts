@@ -80,7 +80,7 @@ export class SignupPage implements OnInit {
       //console.log('A senha deve ter pelo menos 8 caracteres, um número, uma letra maiúscula e um caractere especial (!@#$%^&*)');
       const alert = await this.alert.create({
         header: 'Erro a criar conta',
-        message: 'A senha deve ter pelo menos 8 caracteres, um número, uma letra maiúscula e um caractere especial (!@#$%^&*)',
+        message: 'A palavra-passe deve ter pelo menos 8 caracteres, um número, uma letra maiúscula e um caractere especial (!@#$%^&*)',
         buttons: ['OK']
       });
       await alert.present();
