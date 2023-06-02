@@ -57,7 +57,7 @@ ion-content {
 .search_pages{
   margin-top: -30px;
   position: relative;
-  left: 10px;
+  left: 43px;
   color: #91C6FC;
   width: 22px;
   height: 22px;
@@ -98,4 +98,10 @@ ion-content {
     left: 5px;
     color: #91C6FC;
     white-space: nowrap;
+}
+
+.total-movies{
+  font-size: 16px;
+  color: #91C6FC;
+  top: -13px;
 }

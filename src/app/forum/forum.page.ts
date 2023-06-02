@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
 import { ScreenOrientation, OrientationLockOptions } from '@capacitor/screen-orientation';
+import { AlertController } from '@ionic/angular';
 
 interface Post {
   postId: string;
@@ -34,7 +35,7 @@ export class ForumPage implements OnInit {
   public newComment: string = '';
   public username: string = '';
 
-  constructor(private route: ActivatedRoute, private storage: Storage) {
+  constructor(private route: ActivatedRoute, private storage: Storage, private alertController: AlertController) {
     this.posts = [];
     this.comments = [];
     this.postId = '';
@@ -122,6 +123,8 @@ export class ForumPage implements OnInit {
       this.updateCommentsStorage();
 
       this.newComment = '';
+
+      this.presentAlert('Comentário adicionado com sucesso!');
     }
   }
     async updateCommentsStorage() {
@@ -137,6 +140,16 @@ export class ForumPage implements OnInit {
       const timestamp = new Date().getTime();
       const randomNum = Math.floor(Math.random() * 1000000);
       return `${timestamp}-${randomNum}`;
+    }
+
+    async presentAlert(message: string) {
+      const alert = await this.alertController.create({
+        header: 'Sucesso',
+        message: message,
+        buttons: ['OK']
+      });
+  
+      await alert.present();
     }
   }
 
