@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage-angular';
 import { AlertController } from '@ionic/angular';
-
+import { ScreenOrientation, OrientationLockOptions } from '@capacitor/screen-orientation';
 
 @Component({
   selector: 'app-signup',
@@ -19,6 +19,10 @@ export class SignupPage implements OnInit {
   constructor(private storage: Storage, private alert: AlertController) { }
 
   ngOnInit() {
+    if (ScreenOrientation.lock) {
+      const lockOptions: OrientationLockOptions = { orientation: 'portrait' };
+      ScreenOrientation.lock(lockOptions);
+    }
   }
 
   async Register() {
@@ -76,7 +80,7 @@ export class SignupPage implements OnInit {
       //console.log('A senha deve ter pelo menos 8 caracteres, um número, uma letra maiúscula e um caractere especial (!@#$%^&*)');
       const alert = await this.alert.create({
         header: 'Erro a criar conta',
-        message: 'A senha deve ter pelo menos 8 caracteres, um número, uma letra maiúscula e um caractere especial (!@#$%^&*)',
+        message: 'A palavra-passe deve ter pelo menos 8 caracteres, um número, uma letra maiúscula e um caractere especial (!@#$%^&*)',
         buttons: ['OK']
       });
       await alert.present();

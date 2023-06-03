@@ -73,6 +73,18 @@
   },
   {
     "id": "7",
+    "title_year": "Mad Max: Fury Road [2015]",
+    "imdb_rating": "8.1",
+    "genre": "Ação",
+    "duration": "2h01mim",
+    "channel": "assets/img/hbo.png",
+    "synopsis": "Perseguido pelo seu turbulento passado, Mad Max acredita que a melhor forma de sobreviver é não depender de mais ninguém para além de si próprio. Ainda assim, acaba por se juntar a um grupo de rebeldes que atravessa a Wasteland, numa máquina de guerra conduzida por uma Imperatriz de elite, Furiosa. Este bando está em fuga de uma Cidadela tiranizada por Immortan Joe, a quem algo insubstituível foi roubado. Exasperado com a sua perda, o Senhor da Guerra reúne o seu letal gang e inicia uma impiedosa perseguição aos rebeldes e a mais implacável Guerra na Estrada de sempre.",
+    "img": "assets/img/mad_max.png",
+    "big_img": "assets/img/mad_max_trailer.png",
+    "video": "https://www.youtube.com/watch?v=hEJnMQG9ev8"
+  },
+  {
+    "id": "8",
     "title_year": "The Outfit [2022]",
     "imdb_rating": "7.2",
     "genre": "Crime",
@@ -84,7 +96,7 @@
     "video": "https://www.youtube.com/watch?v=qDUx50a3pcY"
   },
   {
-    "id": "8",
+    "id": "9",
     "title_year": "John Wick [2014]",
     "imdb_rating": "7.4",
     "genre": "Crime",
@@ -96,7 +108,7 @@
     "video": "https://www.youtube.com/watch?v=C0BMx-qxsP4"
   },
   {
-    "id": "9",
+    "id": "10",
     "title_year": "John Wick 2 [2017]",
     "imdb_rating": "7.4",
     "genre": "Crime",
@@ -108,7 +120,7 @@
     "video": "https://www.youtube.com/watch?v=XGk2EfbD_Ps&t=46s"
   },
   {
-    "id": "10",
+    "id": "11",
     "title_year": "John Wick 3 [2019]",
     "imdb_rating": "7.4",
     "genre": "Crime",
@@ -120,7 +132,43 @@
     "video": "https://www.youtube.com/watch?v=M7XM597XO94&t=59s"
   },
   {
-    "id": "11",
+    "id": "12",
+    "title_year": "Sherlock Holmes [2009]",
+    "imdb_rating": "7.6",
+    "genre": "Crime",
+    "duration": "2h09mim",
+    "channel": "assets/img/hbo.png",
+    "synopsis": "Final do século XIX. Sherlock Holmes é um detetive conhecido por usar a lógica dedutiva e o método científico para decifrar os casos nos quais trabalha. O dr. John Watson é seu fiel parceiro, que sempre o acompanhou em suas aventuras. O último caso da dupla envolve Lorde Blackwood, por eles presos ao realizar um ritual macabro que previa o assassinato de uma jovem. Blackwood já havia matado quatro mulheres e tem fama junto a população de ser um poderoso feiticeiro. Ele é preso e depois condenado à forca, mas misteriosamente é visto deixando o túmulo onde seu caixão foi deixado.",
+    "img": "assets/img/sherlock.png",
+    "big_img": "assets/img/sherlock_trailer.png",
+    "video": "https://www.youtube.com/watch?v=iKUzhzustok"
+  },
+{
+    "id": "13",
+    "title_year": "Red Notice [2021]",
+    "imdb_rating": "6.3",
+    "genre": "Crime",
+    "duration": "1h57mim",
+    "channel": "assets/img/hbo.png",
+    "synopsis": "Quando a Interpol emite um Aviso Vermelho —o mandato mais sério que se pode emitir para caçar e capturar os mais procurados do mundo — John Hartley, o melhor analista do FBI, envolve-se no caso. A sua perseguição a nível global coloca-o no meio de um assalto ousado, onde é forçado a unir forças com Nolan Booth, o maior ladrão de arte do mundo, para procurar O Bispo, a ladra de arte mais procurada de sempre. A aventura alucinada dos três leva-os a uma série de destinos pelo mundo fora, incluindo uma pista de dança, uma prisão isolada, uma selva e —o pior de todos —na companhia uns dos outros.",
+    "img": "assets/img/red_notice.png",
+    "big_img": "assets/img/red_notice_trailer.png",
+    "video": "https://www.youtube.com/watch?v=Pj0wz7zu3Ms"
+  },
+{
+    "id": "14",
+    "title_year": "The Diplomat [2023]",
+    "imdb_rating": "8.1",
+    "genre": "Crime",
+    "duration": "50mim",
+    "channel": "assets/img/netflix.png",
+    "synopsis": "No meio de uma crise internacional, uma diplomata de carreira assume um cargo de grande destaque para o qual não está preparada, com implicações sísmicas para o seu casamento e o seu futuro político.",
+    "img": "assets/img/diplomat.png",
+    "big_img": "assets/img/diplomat_trailer.png",
+    "video": "https://www.youtube.com/watch?v=lV6sJlBbhPs"
+  },
+  {
+    "id": "15",
     "title_year": "The Banker [2020]",
     "imdb_rating": "7.3",
     "genre": "Drama",
@@ -132,7 +180,79 @@
     "video": "https://www.youtube.com/watch?v=J_-nk9-sMus"
   },
   {
-    "id": "12",
+    "id": "16",
+    "title_year": "Ford v Ferrari [2019]",
+    "imdb_rating": "8.1",
+    "genre": "Drama",
+    "duration": "2h33mim",
+    "channel": "assets/img/disney+.png",
+    "synopsis": "Baseado na história real do visionário “car designer” Carroll Shelby e do destemido piloto britânico Ken Miles. Juntos lutaram contra os regulamentos, as leis da física e os seus próprios demónios com o objetivo de construir um carro de corrida revolucionário para a Ford Motor Company e vencer os carros de Enzo Ferrari nas 24 Horas de Le Mans em França (1966).",
+    "img": "assets/img/ford_ferrari.png",
+    "big_img": "assets/img/ford_ferrari_trailer.png",
+    "video": "https://www.youtube.com/watch?v=zyYgDtY2AMY"
+  },
+{
+    "id": "17",
+    "title_year": "Greenland [2020]",
+    "imdb_rating": "6.4",
+    "genre": "Drama",
+    "duration": "2h00mim",
+    "channel": "assets/img/primevideo.png",
+    "synopsis": "John Garrity, a sua esposa separada e o seu filho pequeno embarcam numa perigosa viagem em busca de um refúgio, à medida que um cometa assassino de planetas se dirige à Terra. No meio de relatos aterrorizantes de cidades a serem devastadas, os Garritys experienciam o melhor e o pior da humanidade. À medida que a contagem decrescente para o apocalipse global se aproxima do zero, a sua incrível jornada culmina numa fuga desesperada e de última hora para um possível refúgio seguro.",
+    "img": "assets/img/greenland.png",
+    "big_img": "assets/img/greenland_trailer.png",
+    "video": "https://www.youtube.com/watch?v=RTODtIQQRpA"
+  },
+{
+    "id": "18",
+    "title_year": "Hacksaw Ridge [2016]",
+    "imdb_rating": "8.1",
+    "genre": "Drama",
+    "duration": "2h11mim",
+    "channel": "assets/img/primevideo.png",
+    "synopsis": "O sonho do jovem Desmond T. Doss de se tornar médico é adiado devido aos escassos meios financeiros da família. Empenhado em salvar vidas, alista-se no Exército norte-americano para cumprir o que considera ser sua obrigação: ajudar os combatentes da Segunda Grande Guerra, mesmo sabendo que as suas convicções pessoais e religiosas o impossibilitam de possuir uma arma ou matar um inimigo. Como pode um soldado lutar pelo seu país sem protecção? Doss tenciona dar o seu contributo integrando a unidade médica e salvando as vidas dos soldados feridos em combate. Apesar do desdém e preconceito de alguns dos seus colegas, que vêem a sua atitude como um acto de cobardia, será durante a batalha de Okinawa (no Japão), sem pegar em armas ou disparar um tiro, que mostrará a sua bravura.",
+    "img": "assets/img/ridge.png",
+    "big_img": "assets/img/ridge_trailer.png",
+    "video": "https://www.youtube.com/watch?v=s2-1hz1juBI"
+  },
+{
+    "id": "19",
+    "title_year": "Drive [2011]",
+    "imdb_rating": "7.8",
+    "genre": "Drama",
+    "duration": "1h40mim",
+    "channel": "assets/img/hbo.png",
+    "synopsis": "Driver é um condutor profissional de automóveis de Los Angeles, duplo para produções cinematográficas durante o dia e motorista para bandos de assaltos à mão armada durante a noite. Apesar de ser um solitário por natureza, não consegue deixar de se apaixonar pela sua bela vizinha Irene, uma jovem e vulnerável mãe arrastada para o perigoso submundo com o regresso da prisão do marido, Standard. Depois de um golpe, destinado a pagar a protecção de Standard, dar inesperadamente para o torto, Driver dá consigo a ter de defender a mulher que ama, perseguida por um perigoso sindicato de criminosos (Albert Brooks e Ron Perlman). Mas quando percebe que os bandidos perseguem mais do que o saco de dinheiro no porta-bagagem, querendo também a pele de Irene e do seu filho, Driver é forçado a mudar de direcção e partir ele próprio à ofensiva.",
+    "img": "assets/img/drive.png",
+    "big_img": "assets/img/drive_trailer.png",
+    "video": "https://www.youtube.com/watch?v=KBiOF3y1W0Y"
+  },
+{
+    "id": "20",
+    "title_year": "Molly's Game [2017]",
+    "imdb_rating": "7.4",
+    "genre": "Drama",
+    "duration": "2h20mim",
+    "channel": "assets/img/primevideo.png",
+    "synopsis": "Molly Bloom, uma jovem esquiadora e antiga esperança olímpica, torna-se uma empreendedora de sucesso (e alvo de uma investigação do FBI) quando estabelece um jogo de póquer de alto risco e internacional.",
+    "img": "assets/img/molly.png",
+    "big_img": "assets/img/molly_trailer.png",
+    "video": "https://www.youtube.com/watch?v=Vu4UPet8Nyc"
+  },
+{
+    "id": "21",
+    "title_year": "Joker [2019]",
+    "imdb_rating": "8.4",
+    "genre": "Drama",
+    "duration": "2h02mim",
+    "channel": "assets/img/netflix.png",
+    "synopsis": "Arthur Fleck é um homem que enfrenta a crueldade e o desprezo da sociedade, juntamente com a indiferença de um sistema que lhe permite passar da vulnerabilidade para a depravação. Durante o dia é um palhaço e à noite luta para se tornar um artista de stand-up comedy…mas descobre que é ele próprio a piada. Sempre diferente de todos em seu redor, o seu riso incontrolável e inapropriado, ganha ainda mais força quando tenta contê-lo, expondo-o a situações ridículas e até à violência. Preso numa existência cíclica que oscila entre o precipício da realidade e da loucura, uma má decisão acarreta uma reacção em cadeia de eventos crescentes e, por fim, mortais.",
+    "img": "assets/img/joker.png",
+    "big_img": "assets/img/joker_trailer.png",
+    "video": "https://www.youtube.com/watch?v=t433PEQGErc"
+  },
+  {
+    "id": "22",
     "title_year": "Black Adam [2022]",
     "imdb_rating": "6.3",
     "genre": "Ficção Científica",
@@ -144,7 +264,7 @@
     "video": "https://www.youtube.com/watch?v=JaV7mmc9HGw"
   },
   {
-    "id": "13",
+    "id": "23",
     "title_year": "Stranger Things [2016]",
     "imdb_rating": "8.7",
     "genre": "Ficção Científica",
@@ -156,7 +276,7 @@
     "video": "https://www.youtube.com/watch?v=b9EkMc79ZSU"
   },
   {
-    "id": "14",
+    "id": "24",
     "title_year": "The Flash [2014]",
     "imdb_rating": "7.5",
     "genre": "Ficção Científica",
@@ -168,7 +288,7 @@
     "video": "https://www.youtube.com/watch?v=IgVyroQjZbE"
   },
   {
-    "id": "15",
+    "id": "25",
     "title_year": "Everything Everywhere All at Once [2022]",
     "imdb_rating": "7.9",
     "genre": "Ficção Científica",
@@ -180,7 +300,7 @@
     "video": "https://www.youtube.com/watch?v=wxN1T1uxQ2g"
   },
   {
-    "id": "16",
+    "id": "26",
     "title_year": "Code 8 [2019]",
     "imdb_rating": "6.1",
     "genre": "Ficção Científica",
@@ -192,7 +312,32 @@
     "video": "https://www.youtube.com/watch?v=PrX1JJ5dduA"
   },
   {
-    "id": "17",
+    "id": "27",
+    "title_year": "Avatar: The Way of Water [2022]",
+    "imdb_rating": "7.7",
+    "genre": "Ficção Científica",
+    "duration": "3h12mim",
+    "channel": "assets/img/appletv.png",
+    "synopsis": "Avatar O Caminho da Água decorre uma década após os acontecimentos do primeiro filme e conta a história da família Sully (Jake, Neytiri e os seus filhos), os seus problemas, as longas distâncias que vão percorrer para se manterem a salvo, as batalhas que lutam para se manterem vivos, e as tragédias que suportam.",
+    "img": "assets/img/avatar.png",
+    "big_img": "assets/img/avatar_trailer.png",
+    "video": "https://www.youtube.com/watch?v=d9MyW72ELq0"
+  },
+{
+    "id": "28",
+    "title_year": "Dune [2021]",
+    "imdb_rating": "8.0",
+    "genre": "Ficção Científica",
+    "duration": "2h35mim",
+    "channel": "assets/img/primevideo.png",
+    "synopsis": "Nesta viagem mítica e emocional, “Dune -Duna” conta a história de Paul Adreides, um jovem brilhante e talentoso com um grande destino para além da sua compreensão, que tem de viajar para o planeta mais perigoso do universo para garantir o futuro da sua família e do seu povo. Quando forças malévolas entram em conflito para obter uma quantidade exclusiva do recurso mais precioso do planeta –uma substância capaz de desbloquear o maior potencial da humanidade – apenas os que conquistam os seus medos conseguiram sobreviver.",
+    "img": "assets/img/dune.png",
+    "big_img": "assets/img/dune_trailer.png",
+    "video": "https://www.youtube.com/watch?v=8g18jFHCLXk"
+  },
+
+  {
+    "id": "29",
     "title_year": "The Night Agent [2023]",
     "imdb_rating": "7.5",
     "genre": "Mistério",
@@ -204,7 +349,7 @@
     "video": "https://www.youtube.com/watch?v=YDbnY9Obsfs"
   },
   {
-    "id": "18",
+    "id": "30",
     "title_year": "House of Gucci [2021]",
     "imdb_rating": "6.6",
     "genre": "Mistério",
@@ -216,7 +361,68 @@
     "video": "https://www.youtube.com/watch?v=pGi3Bgn7U5U"
   },
   {
-    "id": "19",
+    "id": "31",
+    "title_year": "Now You See Me [2013]",
+    "imdb_rating": "7.2",
+    "genre": "Mistério",
+    "duration": "1h55mim",
+    "channel": "assets/img/netflix.png",
+    "synopsis": "Uma equipa de elite do FBI num jogo de gato e rato contra Os Quatro Cavaleiros, uma super equipa que reúne os maiores ilusionistas do mundo. Durante os seus espetáculos Os Quatro Cavaleiros executam uma série de ousados golpes contra corruptos líderes do mundo dos negócios, provocando depois uma “chuva” dos lucros roubados sobre a audiência, permanecendo sempre um passo à frente da lei.",
+    "img": "assets/img/now_you_see_me.png",
+    "big_img": "assets/img/now_you_see_me_trailer.png",
+    "video": "https://www.youtube.com/watch?v=C2NWGAqZhF4"
+  },
+{
+    "id": "32",
+    "title_year": "Now You See Me 2 [2016]",
+    "imdb_rating": "6.4",
+    "genre": "Mistério",
+    "duration": "2h09mim",
+    "channel": "assets/img/primevideo.png",
+    "synopsis": "Um ano após enganarem o FBI e ganharem a admiração do público, os Quatro Cavaleiros regressam com um novo espectáculo que tem como objectivo expor as práticas obscuras e imorais de um magnata da tecnologia. Mas quando tudo corre mal, a única esperança que lhes resta é realizar um último acto sem precedentes, de forma a limparem os seus nomes e revelarem o cérebro por trás de tudo.",
+    "img": "assets/img/now_you_see_me_2.png",
+    "big_img": "assets/img/now_you_see_me_2_trailer.png",
+    "video": "https://www.youtube.com/watch?v=ci696BRDtbE"
+  },
+{
+    "id": "33",
+    "title_year": "The Menu [2022]",
+    "imdb_rating": "7.2",
+    "genre": "Mistério",
+    "duration": "1h47mim",
+    "channel": "assets/img/disney+.png",
+    "synopsis": "Um jovem casal visita um restaurante exclusivo numa ilha remota onde um aclamado chef prepara um delicioso menu e algumas surpresas chocantes.",
+    "img": "assets/img/menu.png",
+    "big_img": "assets/img/menu_trailer.png",
+    "video": "https://www.youtube.com/watch?v=Kx55Rkynhtk"
+  },
+{
+    "id": "34",
+    "title_year": "AKA [2023]",
+    "imdb_rating": "6.6",
+    "genre": "Mistério",
+    "duration": "2h02mim",
+    "channel": "assets/img/netflix.png",
+    "synopsis": "Um agente de operações especiais de aço vê a sua moralidade posta à prova quando se infiltra num sindicato criminoso e, inesperadamente, desenvolve uma ligação com o jovem filho do chefe.",
+    "img": "assets/img/AKA.png",
+    "big_img": "assets/img/AKA_trailer.png",
+    "video": "https://www.youtube.com/watch?v=044PUmZQd1g"
+  },
+{
+    "id": "35",
+    "title_year": "Smile [2022]",
+    "imdb_rating": "6.5",
+    "genre": "Mistério",
+    "duration": "1h55mim",
+    "channel": "assets/img/rakuten.png",
+    "synopsis": "Depois de testemunhar um bizarro e traumático incidente envolvendo uma paciente, a Dra. Rose Cotter começa a viver momentos assustadores que não consegue explicar. À medida que um terror avassalador começa a apoderar-se da sua vida, Rose terá de enfrentar o seu passado conturbado, para poder sobreviver e escapar a esta terrível nova realidade.",
+    "img": "assets/img/smile.png",
+    "big_img": "assets/img/smile_trailer.png",
+    "video": "https://www.youtube.com/watch?v=BcDK7lkzzsU"
+  },
+
+  {
+    "id": "36",
     "title_year": "Emma [2020]",
     "imdb_rating": "6.7",
     "genre": "Romance",
@@ -228,7 +434,79 @@
     "video": "https://www.youtube.com/watch?v=qsOwj0PR5Sk"
   },
   {
-    "id": "20",
+    "id": "37",
+    "title_year": "Ghosted [2023]",
+    "imdb_rating": "5.8",
+    "genre": "Romance",
+    "duration": "2h00mim",
+    "channel": "assets/img/appletv.png",
+    "synopsis": "O humilde Cole apaixona-se pela enigmática Sadie - mas depois faz a descoberta chocante de que ela é uma agente secreta. Antes de poderem decidir se terão um segundo encontro, Cole e Sadie são arrastados para uma aventura internacional para salvar o mundo.",
+    "img": "assets/img/ghosted.png",
+    "big_img": "assets/img/ghosted_trailer.png",
+    "video": "https://www.youtube.com/watch?v=IAdCsNtEuBU"
+  },
+{
+    "id": "38",
+    "title_year": "Ticket to Paradise [2022]",
+    "imdb_rating": "6.1",
+    "genre": "Romance",
+    "duration": "1h44mim",
+    "channel": "assets/img/appletv.png",
+    "synopsis": "George Clooney e Julia Roberts reúnem-se no grande ecrã no papel de um ex-casal que se depara com a complicada tarefa de impedir a sua filha, cega de amor, de cometer o mesmo erro que eles cometeram no passado...",
+    "img": "assets/img/paradise.png",
+    "big_img": "assets/img/paradise_trailer.png",
+    "video": "https://www.youtube.com/watch?v=hkP4tVTdsz8"
+  },
+{
+    "id": "39",
+    "title_year": "Verdens verste menneske [2021]",
+    "imdb_rating": "7.9",
+    "genre": "Romance",
+    "duration": "2h07mim",
+    "channel": "assets/img/primevideo.png",
+    "synopsis": "Julie é jovem, bonita, inteligente e não sabe exatamente o que deseja em uma carreira ou parceiro. Uma noite ela conhece Aksel, um conhecido romancista gráfico 15 anos mais velho que ela, e eles rapidamente se apaixonam. Todavia, ela também conhece um barista de café, Eivind, que também está em um relacionamento. Julie tem que decidir, não apenas entre dois homens, mas também quem ela é e quem ela quer ser.",
+    "img": "assets/img/verdens_verste_menneske.png",
+    "big_img": "assets/img/verdens_verste_menneske_trailer.png",
+    "video": "https://www.youtube.com/watch?v=cc8yFxrmPVc"
+  },
+{
+    "id": "40",
+    "title_year": "Murder Mystery 2 [2023]",
+    "imdb_rating": "5.6",
+    "genre": "Romance",
+    "duration": "1h28mim",
+    "channel": "assets/img/netflix.png",
+    "synopsis": "Após criarem uma agência de detetives, Nick e Audrey Spitz ficam a braços com um caso decisivo quando um amigo bilionário é raptado na sua própria boda.",
+    "img": "assets/img/murder_mystery.png",
+    "big_img": "assets/img/murder_mystery_trailer.png",
+    "video": "https://www.youtube.com/watch?v=LM2F56uK0fs"
+  },
+{
+    "id": "41",
+    "title_year": "Crazy, Stupid, Love. [2011]",
+    "imdb_rating": "5.6",
+    "genre": "Romance",
+    "duration": "1h58mim",
+    "channel": "assets/img/hbo.png",
+    "synopsis": "A vida de um homem de meia idade muda drasticamente quando a mulher lhe pede o divórcio. Vai então procurar redescobrir a sua masculinidade com a ajuda de Jacob, um amigo recente, que o vai ensinar a engatar mulheres em bares.",
+    "img": "assets/img/crazy_stupid_love.png",
+    "big_img": "assets/img/crazy_stupid_love_trailer.png",
+    "video": "https://www.youtube.com/watch?v=flvz5RMRx7E"
+  },
+{
+    "id": "42",
+    "title_year": "Mamma Mia! [2008]",
+    "imdb_rating": "6.5",
+    "genre": "Romance",
+    "duration": "1h48mim",
+    "channel": "assets/img/hbo.png",
+    "synopsis": "Donna é uma mãe solteira e independente, dona de um charmosíssimo hotel na bela ilha grega de Kalokairi. A filha Sophie vai se casar e Donna convida suas melhores amigas. Mas Sophie, que secretamente sonha encontrar o pai, faz também três convites inesperados. À ilha chegam três homens que pertenceram ao passado de Donna, e qualquer um deles pode ser o pai de Sophie. Em 24 horas, Donna se desespera e a confusão se instala nesta deliciosa comédia, iluminada pelas canções do Abba, as paisagens e o mar azul da Grécia.",
+    "img": "assets/img/mamma.png",
+    "big_img": "assets/img/mamma_trailer.png",
+    "video": "https://www.youtube.com/watch?v=XcSMdhfKga4"
+  },
+  {
+    "id": "43",
     "title_year": "The Mandalorian [2019]",
     "imdb_rating": "8.7",
     "genre": "Fantasia",
@@ -240,7 +518,7 @@
     "video": "https://www.youtube.com/watch?v=aOC8E8z_ifw"
   },
   {
-    "id": "21",
+    "id": "44",
     "title_year": "Shazam Fury of the Gods [2023]",
     "imdb_rating": "6.0",
     "genre": "Fantasia",
@@ -252,7 +530,7 @@
     "video": "https://www.youtube.com/watch?v=Zi88i4CpHe4"
   },
   {
-    "id": "22",
+    "id": "45",
     "title_year": "Shazam [2019]",
     "imdb_rating": "7.0",
     "genre": "Fantasia",
@@ -264,7 +542,55 @@
     "video": "https://www.youtube.com/watch?v=go6GEIrcvFY"
   },
   {
-    "id": "23",
+    "id": "46",
+    "title_year": "Black Panther: Wakanda Forever [2022]",
+    "imdb_rating": "6.7",
+    "genre": "Fantasia",
+    "duration": "2h42mim",
+    "channel": "assets/img/disney+.png",
+    "synopsis": "A Rainha Ramonda, Shuri, M'Baku, Okoye e as Dora Milaje lutam para proteger a sua nação das potências mundiais que intervêm após a morte do Rei T'Challa. Enquanto os Wakandianos se esforçam para abraçar o seu próximo capítulo, os heróis devem unir-se com a ajuda de Nakia, o Cão de Guerra, e Everett Ross, e forjar um novo caminho para o reino de Wakanda.",
+    "img": "assets/img/black_panter.png",
+    "big_img": "assets/img/black_panter_trailer.png",
+    "video": "https://www.youtube.com/watch?v=_Z3QKkl1WyM"
+  },
+{
+    "id": "47",
+    "title_year": "Doctor Strange in the Multiverse of Madness [2022]",
+    "imdb_rating": "6.9",
+    "genre": "Fantasia",
+    "duration": "2h06mim",
+    "channel": "assets/img/disney+.png",
+    "synopsis": "Viaje para o desconhecido com o Doutor Estranho que, com a ajuda de aliados místicos antigos e novos, atravessa as alucinantes e perigosas realidades alternativas do Multiverso para enfrentar um misterioso novo adversário.",
+    "img": "assets/img/strange.png",
+    "big_img": "assets/img/strange_trailer.png",
+    "video": "https://www.youtube.com/watch?v=aWzlQ2N6qqg"
+  },
+{
+    "id": "48",
+    "title_year": "Shang-Chi and the Legend of the Ten Rings [2021]",
+    "imdb_rating": "7.5",
+    "genre": "Fantasia",
+    "duration": "2h16mim",
+    "channel": "assets/img/disney+.png",
+    "synopsis": "Shang-Chi terá de enfrentar o passado que julgava ter deixado para trás quando é atraído para a teia da misteriosa organização Dez Anéis.",
+    "img": "assets/img/shang.png",
+    "big_img": "assets/img/shang_trailer.png",
+    "video": "https://www.youtube.com/watch?v=8YjFbMbfXaQ"
+  },
+{
+    "id": "49",
+    "title_year": "Thor: Love and Thunder [2022]",
+    "imdb_rating": "6.2",
+    "genre": "Fantasia",
+    "duration": "1h59mim",
+    "channel": "assets/img/disney+.png",
+    "synopsis": "Thor empreende uma jornada diferente de tudo o que já enfrentou –a procura pela paz interior. Mas a sua reforma é interrompida por um assassino galáctico conhecido como Gorr, o Carniceiro dos Deuses, que procura a extinção de todos os deuses. Para combater a ameaça, Thor pede a ajuda da ‘Rei Valkiria’, Korg e da ex-namorada Jane Foster como a Poderosa Thor, que –para surpresa de Thor –empunha inexplicavelmente o seu martelo mágico, Mjolnir. Juntos, eles embarcam numa angustiante aventura cósmica para descobrir o mistério da vingança do Carniceiro dos Deuses e detê-lo antes que seja tarde demais.",
+    "img": "assets/img/thor.png",
+    "big_img": "assets/img/thor_trailer.png",
+    "video": "https://www.youtube.com/watch?v=Go8nTmfrQd8"
+  },
+  {
+    "id": "50",
     "title_year": "Teen Wolf: The Movie [2023]",
     "imdb_rating": "5.5",
     "genre": "Aventura",
@@ -276,7 +602,7 @@
     "video": "https://www.youtube.com/watch?v=1y3rflTTjeI"
   },
   {
-    "id": "24",
+    "id": "51",
     "title_year": "Top Gun [1986]",
     "imdb_rating": "6.9",
     "genre": "Aventura",
@@ -288,7 +614,7 @@
     "video": "https://www.youtube.com/watch?v=ArOMXELHiLw"
   },
   {
-    "id": "25",
+    "id": "52",
     "title_year": "Top Gun: Maverick [2022]",
     "imdb_rating": "8.3",
     "genre": "Aventura",
@@ -300,7 +626,56 @@
     "video": "https://www.youtube.com/watch?v=qSqVVswa420"
   },
   {
-    "id": "26",
+    "id": "53",
+    "title_year": "The Gray Man [2022]",
+    "imdb_rating": "6.5",
+    "genre": "Aventura",
+    "duration": "2h07mim",
+    "channel": "assets/img/netflix.png",
+    "synopsis": "The Gray Man conta a história do ex-agente da CIA Court Gentry, também conhecido como Sierra Six. Tirado de uma penitenciária federal e recrutado pelo seu mentor, Donald Fitzroy, Gentry tinha como função espalhar a morte com o aval da agência norte-americana. Porém, num volte-face do destino, Six tornou-se agora o alvo, perseguido pelo mundo fora por Lloyd Hansen, um antigo colega da CIA que não olha a meios para o neutralizar. Felizmente, Six conta com a ajuda preciosa da agente Dani Miranda (Ana de Armas).",
+    "img": "assets/img/the_gray_man.png",
+    "big_img": "assets/img/the_gray_man_trailer.png",
+    "video": "https://www.youtube.com/watch?v=BmllggGO4pM"
+  },
+{
+    "id": "54",
+    "title_year": "X-Men: Days of Future Past [2014]",
+    "imdb_rating": "7.9",
+    "genre": "Aventura",
+    "duration": "2h11mim",
+    "channel": "assets/img/disney+.png",
+    "synopsis": "No futuro, os mutantes são caçados impiedosamente pelos Sentinelas, gigantescos robôs criados por Bolívar Trask. Os poucos sobreviventes precisam viver escondidos, caso contrário serão também mortos. Entre eles estão o professor Charles Xavier, Magneto, Tempestade, Kitty Pryde e Wolverine, que buscam um meio de evitar que os mutantes sejam aniquilados. O meio encontrado é enviar a consciência de Wolverine em uma viagem no tempo, rumo aos anos 1970. Lá ela ocupa o corpo do Wolverine da época, que procura os ainda jovens Xavier e Magneto para que, juntos, impeçam que este futuro trágico para os mutantes se torne realidade.",
+    "img": "assets/img/x_men.png",
+    "big_img": "assets/img/x_men_trailer.png",
+    "video": "https://www.youtube.com/watch?v=pK2zYHWDZKo"
+  },
+{
+    "id": "55",
+    "title_year": "X-Men: Apocalypse [2016]",
+    "imdb_rating": "6.9",
+    "genre": "Aventura",
+    "duration": "2h24mim",
+    "channel": "assets/img/disney+.png",
+    "synopsis": "Desde o início da civilização, ele era adorado como um deus. Apocalipse, o primeiro e mais poderoso mutante do universo X-Men da Marvel, acumulou os poderes de muitos outros mutantes, tornando-se imortal e invencível. Ao acordar depois de milhares de anos, fica desiludido com o mundo em que se encontra e recruta um grupo de mutantes poderosos, incluindo um Magneto desanimado, para purificar a humanidade e criar uma nova ordem mundial, sobre a qual ele reinará. Com o destino da Terra em causa, Raven com a ajuda do Professor X irá liderar uma equipa de jovens X-Men para combater o seu maior inimigo e salvar a humanidade da destruição total.",
+    "img": "assets/img/apocalypse.png",
+    "big_img": "assets/img/apocalypse_trailer.png",
+    "video": "https://www.youtube.com/watch?v=PfBVIHgQbYk"
+  },
+{
+    "id": "56",
+    "title_year": "Dark Phoenix [2019]",
+    "imdb_rating": "5.7",
+    "genre": "Aventura",
+    "duration": "1h54mim",
+    "channel": "assets/img/disney+.png",
+    "synopsis": "Os X-Men enfrentam o seu inimigo mais formidável e poderoso quando um dos seus próprios membros, Jean Grey, começa a perder o controlo. Durante uma missão de resgate no espaço exterior, Jean é quase morta quando é atingida por uma misteriosa força cósmica. Ao regressar a casa, esta força não só a torna infinitamente mais poderosa, mas também mais instável. Os X-Men têm agora de se unir para salvar a sua alma e lutar contra alienígenas que querem usar as novas habilidades de Grey para governar a galáxia.",
+    "img": "assets/img/dark_phoenix.png",
+    "big_img": "assets/img/dark_phoenix_trailer.png",
+    "video": "https://www.youtube.com/watch?v=1-q8C_c-nlM"
+  },
+
+  {
+    "id": "57",
     "title_year": "Creed: Rocky's Legacy [2015]",
     "imdb_rating": "7.6",
     "genre": "Desporto",
@@ -312,7 +687,7 @@
     "video": "https://www.youtube.com/watch?v=N__-Apy1NjQ"
   },
   {
-    "id": "27",
+    "id": "58",
     "title_year": "Creed II [2018]",
     "imdb_rating": "7.1",
     "genre": "Desporto",
@@ -324,7 +699,7 @@
     "video": "https://www.youtube.com/watch?v=cPNVNqn4T9I"
   },
   {
-    "id": "28",
+    "id": "59",
     "title_year": "Creed III [2023]",
     "imdb_rating": "6.9",
     "genre": "Desporto",
@@ -336,7 +711,7 @@
     "video": "https://www.youtube.com/watch?v=AHmCH7iB_IM"
   },
   {
-    "id": "29",
+    "id": "60",
     "title_year": "Rocky [1976]",
     "imdb_rating": "8.1",
     "genre": "Desporto",
@@ -348,7 +723,7 @@
     "video": "https://www.youtube.com/watch?v=-Hk-LYcavrw"
   },
   {
-    "id": "30",
+    "id": "61",
     "title_year": "Rocky II [1979]",
     "imdb_rating": "7.3",
     "genre": "Desporto",
@@ -360,7 +735,7 @@
     "video": "https://www.youtube.com/watch?v=A2P9ATb9Qx8"
   },
   {
-    "id": "31",
+    "id": "62",
     "title_year": "Rocky III [1982]",
     "imdb_rating": "6.8",
     "genre": "Desporto",
@@ -372,7 +747,7 @@
     "video": "https://www.youtube.com/watch?v=o7vbDPUMWDc"
   },
   {
-    "id": "32",
+    "id": "63",
     "title_year": "Rocky IV [1985]",
     "imdb_rating": "6.9",
     "genre": "Desporto",

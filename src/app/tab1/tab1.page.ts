@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
+import { ScreenOrientation, OrientationLockOptions } from '@capacitor/screen-orientation';
 
 interface Movie {
   id: string;
@@ -38,7 +39,11 @@ export class Tab1Page implements OnInit {
   ) {}
 
   async ngOnInit() {
-    await this.storage.create(); // Create the database
+    await this.storage.create(); 
+    if (ScreenOrientation.lock) {
+      const lockOptions: OrientationLockOptions = { orientation: 'portrait' };
+      ScreenOrientation.lock(lockOptions);
+    }
 
     this.storage.get('username')
       .then((username) => {

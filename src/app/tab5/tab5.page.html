@@ -1,12 +1,12 @@
 <ion-header>
   <ion-toolbar class="toolbar" color="primary">
-    <app-logo class="logo"></app-logo>
+    <ion-text class="total-movies">Total Movies</ion-text>
     <ion-buttons slot="end">
       <ion-icon name="search-outline" class="search_pages" routerLink="/pesquisa"></ion-icon>
       <ion-icon name="person-outline" class="other-icons"></ion-icon>
       <ion-icon name="notifications-outline" class="other-icons"></ion-icon>
       <ion-icon name="settings-outline" class="other-icons"></ion-icon>
-      <img src="assets/img/tudo.jpg/" class="small-image">
+      <img src="assets/img/all.jpg/" class="small-image">
       <img src="assets/img/netflix.png" class="small-image">
       <img src="assets/img/hbo.png" class="small-image">
       <img src="assets/img/disney+.png" class="small-image">
@@ -25,7 +25,7 @@
 
 <ion-content class="ionContentColor">
   <ion-icon name="search-outline" class="search"></ion-icon>
-  <input type="text" placeholder="Busca por filmes, séries..." class="barra_pesquisa">
+  <input type="text" placeholder="Busca por filmes, séries..." class="barra_pesquisa" [(ngModel)]="searchQuery" (input)="filterPosts()">
   <ion-grid>
     <ion-row>
       <ion-col size="12">

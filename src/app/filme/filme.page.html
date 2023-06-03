@@ -1,12 +1,10 @@
-
-
 <ion-content [fullscreen]="true">
-  <ion-icon name="arrow-back-outline" class="back-icon" (click) ="voltar()"></ion-icon>
+  <ion-icon name="arrow-back-outline" class="back-icon" (click)="voltar()"></ion-icon>
   <ion-grid class="ion-margin" *ngIf="movie">
     <ion-row>
       <ion-col size="12">
         <ion-card button="true">
-          <img [src]="movie.big_img" >
+          <img [src]="movie.big_img">
         </ion-card>
       </ion-col>
     </ion-row>
@@ -35,9 +33,11 @@
     <ion-text class="synopsis info">{{ movie.synopsis }}</ion-text>
     <br>
     <ion-text class="trailer info">Trailer:</ion-text>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ movie.video }}" frameborder="0" allowfullscreen></iframe>
+    <iframe width="360" height="315" [src]="safeVideoUrl" frameborder="0" allowfullscreen></iframe>
+    <iframe width="360" height="315" src="https://www.youtube.com/embed/{{ movie.video }}" frameborder="0" allowfullscreen></iframe>
     <iframe width="560" height="315" [src]="movie.video" frameborder="0" allowfullscreen></iframe>
     <iframe width="360" height="360" src="{{ movie.video }}" frameborder="0" allowfullscreen></iframe>
-    {{movie.video}}
+    <iframe width="360" height="360" src="" frameborder="0" allowfullscreen></iframe>
   </ion-grid>
 </ion-content>
+

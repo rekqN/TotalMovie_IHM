@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
 import { AlertController } from '@ionic/angular';
 import { DataService } from '../services/listas.service';
+import { ScreenOrientation, OrientationLockOptions } from '@capacitor/screen-orientation';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 interface Movie {
   id: string;
@@ -29,13 +31,15 @@ export class FilmePage implements OnInit {
   public dataMovies: Movie[] = [];
   public username: string = '';
   public linkAnterior: string = '';
+  public safeVideoUrl: SafeResourceUrl | undefined;
 
   constructor(
     private route: ActivatedRoute,
     private storage: Storage,
     private router: Router,
     private alertController: AlertController,
-    private dataService: DataService
+    private dataService: DataService,
+    private sanitizer: DomSanitizer
   ) {}
 
   ngOnInit() {
@@ -59,7 +63,15 @@ export class FilmePage implements OnInit {
       .then((json) => {
         this.dataMovies = json;
         this.movie = this.dataMovies.find((movie) => movie.id === this.valorRecebido);
+        if (this.movie) {
+          this.safeVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.movie.video);
+        }
       });
+
+    if (ScreenOrientation.lock) {
+      const lockOptions: OrientationLockOptions = { orientation: 'portrait' };
+      ScreenOrientation.lock(lockOptions);
+    }
   }
 
   voltar() {

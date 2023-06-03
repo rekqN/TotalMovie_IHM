@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ScreenOrientation, OrientationLockOptions } from '@capacitor/screen-orientation';
 
 interface Movie {
   id: string;
@@ -28,6 +29,10 @@ export class PesquisaPage implements OnInit {
 
   ngOnInit() {
     this.carregarDadosMovies();
+    if (ScreenOrientation.lock) {
+      const lockOptions: OrientationLockOptions = { orientation: 'portrait' };
+      ScreenOrientation.lock(lockOptions);
+    }
   }
 
   carregarDadosMovies() {

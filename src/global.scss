@@ -44,29 +44,33 @@ ion-content {
 }
 
 .small-image {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   object-fit: cover;
   margin-right: 10px;
   border-radius: 5px;
   margin-top: 65px;
   position: relative;
-  right: 140px;  
+  right: 120px;  
 }
 
 .search_pages{
   margin-top: -30px;
   position: relative;
-  left: 10px;
+  left: 43px;
   color: #91C6FC;
+  width: 22px;
+  height: 22px;
 }
 
 .other-icons{
   margin-top: -30px;
   position: relative;
-  left: 210px;
+  left: 230px;
   color: #91C6FC;
   margin-right: 5px;
+  width: 20px;
+  height: 20px;
 }
 
 .total-movies {
@@ -94,4 +98,10 @@ ion-content {
     left: 5px;
     color: #91C6FC;
     white-space: nowrap;
+}
+
+.total-movies{
+  font-size: 16px;
+  color: #91C6FC;
+  top: -13px;
 }
