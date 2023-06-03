@@ -20,12 +20,14 @@ export class DataService {
     this.initStorage();
   }
 
+  // Inicializa o armazenamento e carrega a lista de "Ver mais tarde" se existir
   private async initStorage() {
     this.storageInstance = await this.storage.create();
     const storedList = await this.storageInstance.get(this.STORAGE_KEY);
     this.verMaisTardeList = storedList ? JSON.parse(storedList) : [];
   }
 
+  // Adiciona um filme à lista "Ver mais tarde"
   adicionarVerMaisTarde(movieId: string, username: string, tituloYear: string, imagem: string): Promise<void> {
     return new Promise<void>((resolve) => {
       const filmeExistente = this.verMaisTardeList.find(filme => filme.movieId === movieId && filme.username === username);
@@ -47,12 +49,14 @@ export class DataService {
     });
   }
 
+  // Salva a lista "Ver mais tarde" no armazenamento
   private async saveToStorage() {
     if (this.storageInstance) {
       await this.storageInstance.set(this.STORAGE_KEY, JSON.stringify(this.verMaisTardeList));
     }
   }
 
+  // Obtém a lista de filmes "Ver mais tarde" de um usuário específico
   async getVerMaisTardeList(username: string): Promise<{ movieId: string, username: string, tituloYear: string, imagem: string }[]> {
     if (!this.storageInstance) {
       await this.initStorage();
@@ -62,6 +66,7 @@ export class DataService {
     return filmesPorUsuario;
   }
 
+  // Obtém a lista de filmes de um usuário específico
   async getFilmesPorUsuario(username: string): Promise<{ movieId: string, username: string, tituloYear: string, imagem: string }[]> {
     if (!this.storageInstance) {
       await this.initStorage();
@@ -70,6 +75,7 @@ export class DataService {
     return filmes;
   }
 
+  // Obtém o nome de usuário do armazenamento
   async getUsernameFromStorage(): Promise<string> {
     if (!this.storageInstance) {
       await this.initStorage();
@@ -79,6 +85,7 @@ export class DataService {
     return username;
   }
   
+  // Remove um filme da lista "Ver mais tarde"
   async removerFilmeVerMaisTarde(filme: Movie) {
     if (!this.storageInstance) {
       await this.initStorage();
@@ -91,6 +98,7 @@ export class DataService {
     }
   }
   
+  // Verifica se um filme já existe na lista "Ver mais tarde" de um usuário específico
   async verificarFilmeExistente(movieId: string, username: string): Promise<boolean> {
     if (!this.storageInstance) {
       await this.initStorage();

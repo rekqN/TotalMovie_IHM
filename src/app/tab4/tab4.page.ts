@@ -47,6 +47,7 @@ export class Tab4Page implements OnInit{
       });
   }
 
+  // Obtém todos os filmes armazenados na lista do username atual através do service
   async carregarFilmesVerMaisTarde() {
     try {
       this.filmesVerMaisTarde = await this.dataService.getVerMaisTardeList(this.username);
@@ -56,6 +57,7 @@ export class Tab4Page implements OnInit{
     }
   }
 
+  // Remove o filme da lista de filmes do username através do service
   async removerFilme(filme: Movie) {
     const alert = await this.alertController.create({
       header: 'Confirmação',
@@ -86,6 +88,7 @@ export class Tab4Page implements OnInit{
     await alert.present();
   }
 
+  // Adiciona o filme selecionado na lista do username através do service
   async adicionarFilmeVerMaisTarde(movieId: string, tituloYear: string, imagem: string) {
     try {
       await this.dataService.adicionarVerMaisTarde(movieId, this.username, tituloYear, imagem);

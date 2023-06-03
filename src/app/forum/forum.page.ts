@@ -135,7 +135,8 @@ export class ForumPage implements OnInit {
         console.error('Erro ao atualizar o armazenamento local:', error);
       }
     }
-  
+    
+    // Gera um ID único para cada novo comentário
     generateUniqueId(): string {
       const timestamp = new Date().getTime();
       const randomNum = Math.floor(Math.random() * 1000000);

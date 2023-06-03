@@ -78,6 +78,7 @@ export class FilmePage implements OnInit {
     history.back();
   }
 
+  // Armazena o filme selecionado na lista caso este não esteja já armazenado
   async adicionarVerMaisTarde() {
     console.log('Botão "Ver mais tarde" clicado!');
     if (this.movie) {
